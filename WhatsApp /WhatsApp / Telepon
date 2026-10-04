@@ -856,7 +856,7 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
         </div>
         <div class="l-addr" style="margin:0 0 22px">
           <span class="q-ico"><i data-lucide="phone"></i></span>
-          <div><b>WhatsApp / Telepon</b><p>0851-8451-5015</p></div>
+          <div><b>WhatsApp / Telepon</b><p>0812-7444-1118</p></div>
         </div>
         <div class="l-hours"><!-- sesuaikan jam -->
           <div><span>Senin – Sabtu</span><b>08.30 – 17.30</b></div>
@@ -903,7 +903,7 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
       <h2>Mau Tanya Dulu? Santai, Chat Aja!</h2>
       <p>Tanya stok, minta foto unit terbaru, atau konsultasi kebutuhan — semuanya gratis dan dibalas cepat.</p>
       <div class="k-btns">
-        <a class="btn btn-wa js-wa" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> 0851-8451-5015</a>
+        <a class="btn btn-wa js-wa" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> 0812-7444-1118</a>
         <a class="btn btn-ghost" href="https://instagram.com/liwa.net_lampung" target="_blank" rel="noopener"><i data-lucide="instagram"></i> liwa.net_lampung</a>
       </div>
     </div>
@@ -946,7 +946,7 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
       <div class="ft-col">
         <h4>Kontak</h4>
         <ul>
-          <li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp: 0851-8451-5015</a></li>
+          <li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp: 0812-7444-1118</a></li>
           <li><a href="https://instagram.com/liwa.net_lampung" target="_blank" rel="noopener">Instagram: @liwa.net_lampung</a></li>
         </ul>
         <div class="ft-addr"><i data-lucide="clock"></i><span>Sen–Sab 08.30–17.30 · Minggu 09.00–14.00</span></div>
@@ -999,7 +999,7 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 
 <script>
 /* ================= KONFIG ================= */
-const WA_NUMBER = '6285184515015'; // 0851-8451-5015 (sesuai pricelist)
+const WA_NUMBER = '6281274441118'; // 0851-8451-5015 (sesuai pricelist)
 const IG = 'https://instagram.com/liwa.net_lampung';
 const waLink = t => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
 const rupiah = n => 'Rp ' + n.toLocaleString('id-ID');
