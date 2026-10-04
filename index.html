@@ -12,7 +12,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <style>
-/* ============ DASAR (LIGHT THEME) ============ */
 :root{
   --bg:#F8FAFC; --surface:#FFFFFF; --surface2:#F1F5F9; --field:#F1F5F9;
   --line:#E2E8F0; --line2:#CBD5E1;
@@ -42,7 +41,6 @@ input,select,textarea{font-family:inherit;font-size:14px;color:var(--text)}
 section{scroll-margin-top:80px}
 .lucide{width:18px;height:18px;flex:none}
 
-/* ============ TIPOGRAFI ============ */
 h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-weight:700}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--disp);font-size:11.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--primary-h)}
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--primary)}
@@ -50,7 +48,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .sec-head h2{font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px}
 .sec-head p{color:var(--muted);max-width:600px}
 
-/* ============ TOMBOL ============ */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;font-size:14px;padding:12px 22px;border-radius:12px;transition:.22s;white-space:nowrap}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-primary:hover{background:var(--primary-h);transform:translateY(-2px);box-shadow:0 10px 26px rgba(37,99,235,.28)}
@@ -60,12 +57,10 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .btn-wa:hover{background:var(--wa-h);transform:translateY(-2px);box-shadow:0 10px 26px rgba(22,163,74,.28)}
 .btn-sm{padding:9px 16px;font-size:13px;border-radius:10px}
 
-/* Indikator online 24 jam */
 .dot{width:9px;height:9px;border-radius:50%;background:var(--ok);position:relative;flex:none}
 .dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--ok);opacity:.5;animation:ping 1.6s infinite}
 @keyframes ping{from{transform:scale(.5);opacity:.8}to{transform:scale(1.4);opacity:0}}
 
-/* ============ NAVBAR ============ */
 .nav{position:fixed;inset:0 0 auto;z-index:90;transition:.3s;border-bottom:1px solid transparent}
 .nav.scrolled{background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-color:var(--line)}
 .nav-in{display:flex;align-items:center;gap:26px;height:70px}
@@ -86,7 +81,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .m-menu a:last-child{border:none}
 @media(max-width:900px){.nav-links,.nav-cta{display:none}.burger{display:grid}}
 
-/* ============ HERO ============ */
 .hero{position:relative;padding:150px 0 76px;background-image:radial-gradient(circle,rgba(100,116,139,.16) 1px,transparent 1px);background-size:30px 30px}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 70% 18%,rgba(37,99,235,.08),transparent 70%);pointer-events:none}
 .hero-grid{position:relative;z-index:1;display:grid;gap:56px;align-items:center}
@@ -101,8 +95,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .hero-proof .stars .lucide{width:14px;height:14px;fill:currentColor}
 .proof-div{width:1px;height:16px;background:var(--line2)}
 .proof-online{display:inline-flex;align-items:center;gap:8px;font-weight:500}
-
-/* Ilustrasi teknisi */
 .hero-visual{position:relative;display:flex;justify-content:center}
 .hero-fig{width:min(560px,100%);filter:drop-shadow(0 26px 44px rgba(2,6,23,.14))}
 .arm-work{animation:work 1.5s ease-in-out infinite;transform-box:fill-box;transform-origin:85% 5%}
@@ -122,7 +114,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
   .chips .chip:last-child{grid-column:1/-1}
 }
 
-/* ============ MARQUEE BRAND ============ */
 .marq{border-block:1px solid var(--line);padding:16px 0;overflow:hidden;background:var(--surface)}
 .marq-track{display:flex;gap:56px;width:max-content;animation:marq 30s linear infinite}
 .marq:hover .marq-track{animation-play-state:paused}
@@ -130,7 +121,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .marq span::after{content:"";width:4px;height:4px;border-radius:50%;background:#CBD5E1}
 @keyframes marq{to{transform:translateX(-50%)}}
 
-/* ============ QUICK SERVICE ============ */
 .quick{padding:76px 0}
 .q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 @media(min-width:900px){.q-grid{grid-template-columns:repeat(4,1fr);gap:18px}}
@@ -147,7 +137,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .q-banner .q-ico{flex:none}
 .q-banner p{flex:1;margin:2px 0 6px}
 
-/* ============ KATALOG ============ */
 .katalog{padding:86px 0;background:var(--surface);border-block:1px solid var(--line)}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
 .fchip{padding:8px 16px;border-radius:99px;border:1px solid var(--line2);font-size:13px;font-weight:500;color:var(--muted);transition:.2s;background:var(--surface)}
@@ -208,7 +197,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .empty .lucide{width:40px;height:40px;color:var(--dim);margin:0 auto 14px}
 .empty h3{font-size:17px;color:var(--text);margin-bottom:6px}
 
-/* ============ SECOND ============ */
 .second{padding:90px 0}
 .s-grid{display:grid;gap:44px;align-items:center}
 @media(min-width:960px){.s-grid{grid-template-columns:1fr 1fr;gap:60px}}
@@ -223,7 +211,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .feat-note{display:flex;align-items:center;gap:9px;margin-top:16px;padding:12px 14px;background:var(--primary-soft);border:1px solid rgba(37,99,235,.3);border-radius:11px;font-size:12.5px;color:var(--muted)}
 .feat-note .lucide{width:15px;height:15px;color:var(--primary-h)}
 
-/* ============ SERVICE CENTER ============ */
 .service{padding:90px 0;background:var(--surface);border-block:1px solid var(--line)}
 .svc-grid{display:grid;gap:18px;margin-bottom:26px}
 @media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}.svc-col.it{grid-column:1/-1}.svc-col.it .svc-items{grid-template-columns:repeat(3,1fr)}}
@@ -267,7 +254,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .bk-success h4{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ok);margin-bottom:8px;font-family:var(--disp)}
 .bk-success p{font-size:12.5px;color:var(--muted)}
 
-/* ============ JUAL BELI ============ */
 .trade{padding:90px 0}
 .t-grid{display:grid;gap:40px;align-items:center}
 @media(min-width:960px){.t-grid{grid-template-columns:1fr 1fr;gap:64px}}
@@ -280,7 +266,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .trade-checks li{display:flex;align-items:center;gap:11px;font-size:13.5px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 14px}
 .trade-checks .lucide{width:15px;height:15px;color:var(--ok)}
 
-/* ============ ULASAN ============ */
 .ulasan{padding:90px 0;background:var(--surface);border-block:1px solid var(--line)}
 .t-wrap{position:relative;max-width:760px;margin:0 auto}
 .t-track{position:relative;transition:height .35s ease}
@@ -308,7 +293,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .rv-stars .lucide:nth-child(2){animation-delay:.1s}.rv-stars .lucide:nth-child(3){animation-delay:.2s}.rv-stars .lucide:nth-child(4){animation-delay:.3s}.rv-stars .lucide:nth-child(5){animation-delay:.4s}
 @keyframes starPop{to{opacity:1;transform:scale(1)}}
 
-/* ============ LOKASI ============ */
 .lokasi{padding:90px 0}
 .l-grid{display:grid;gap:26px;align-items:stretch}
 @media(min-width:960px){.l-grid{grid-template-columns:1.25fr .75fr}}
@@ -325,7 +309,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .l-hours .closed{color:var(--bad)}
 .l-btns{display:grid;gap:10px;margin-top:auto}
 
-/* ============ TENTANG ============ */
 .tentang{padding:90px 0;background:var(--surface);border-block:1px solid var(--line)}
 .a-grid{display:grid;gap:44px;align-items:center}
 @media(min-width:960px){.a-grid{grid-template-columns:1fr 1fr;gap:64px}}
@@ -337,7 +320,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .stat b{display:block;font-family:var(--disp);font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-.02em;color:var(--text)}
 .stat span{font-size:12.5px;color:var(--dim)}
 
-/* ============ KONTAK ============ */
 .kontak{padding:90px 0}
 .k-card{text-align:center;border:1px solid var(--line);border-radius:24px;padding:56px 26px;background:var(--surface);position:relative;overflow:hidden}
 .k-card::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(100,116,139,.12) 1px,transparent 1px);background-size:26px 26px;pointer-events:none}
@@ -347,7 +329,6 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.18;font-wei
 .k-online{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--ok);background:var(--ok-soft);border:1px solid rgba(16,185,129,.35);border-radius:99px;padding:8px 18px;margin-bottom:26px}
 .k-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 
-/* ============ FOOTER ============ */
 footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 .ft-grid{display:grid;gap:36px;padding-bottom:44px}
 @media(min-width:820px){.ft-grid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
@@ -361,7 +342,6 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 .ft-bottom{border-top:1px solid var(--line);padding:20px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:var(--dim)}
 .ft-bottom b{color:var(--muted);font-weight:600}
 
-/* ============ FLOATING: FAB / TRAY / TOAST ============ */
 .fab{position:fixed;right:18px;bottom:18px;z-index:85;display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;padding:14px 18px;border-radius:99px;font-weight:600;font-size:14px;box-shadow:0 12px 30px rgba(22,163,74,.4);transition:.25s}
 .fab:hover{background:var(--wa-h);transform:translateY(-3px)}
 .fab .lucide{width:20px;height:20px}
@@ -386,7 +366,6 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 @keyframes toastIn{from{opacity:0;transform:translateY(-12px)}to{opacity:1}}
 @keyframes toastOut{to{opacity:0;transform:translateY(-10px)}}
 
-/* ============ MODAL ============ */
 .modal{position:fixed;inset:0;z-index:110;display:none;align-items:flex-end;justify-content:center}
 .modal.open{display:flex}
 .m-overlay{position:absolute;inset:0;background:rgba(15,23,42,.5);backdrop-filter:blur(6px);animation:fade .3s}
@@ -424,7 +403,6 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 .pm-btns{display:grid;gap:10px;margin-top:24px}
 .pm-guarantee{display:flex;align-items:center;gap:9px;margin-top:16px;font-size:12.5px;color:var(--muted)}
 .pm-guarantee .lucide{width:15px;height:15px;color:var(--ok)}
-/* Compare */
 .cm-panel{max-width:760px}
 .cm-head{padding:26px 26px 0}
 .cm-head h2{font-size:22px}
@@ -435,10 +413,14 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 .cmp-table th{background:var(--bg);font-family:var(--disp);font-size:13.5px;width:150px;color:var(--dim);font-weight:600;position:sticky;left:0}
 .cmp-table thead th{position:static;color:var(--text);font-size:14px}
 .cmp-table td .lucide{width:14px;height:14px;vertical-align:-2px;margin-right:5px}
-.best-ok{color:var(--ok);font-weight:600}
-.best-top{color:var(--primary-h);font-weight:600}
 
-/* ============ REVEAL ============ */
+/* Tambahan kecil */
+.b-new{left:10px;background:var(--primary-soft);color:var(--primary-h);border:1px solid rgba(37,99,235,.35)}
+.tag.sec{background:var(--ok-soft);color:var(--ok)}
+.tag.new{background:var(--primary-soft);color:var(--primary-h)}
+.tag.ltd{background:var(--warn-soft);color:var(--warn)}
+.tag.brand{background:var(--surface2);color:var(--muted)}
+
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){
@@ -463,7 +445,7 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
       <a class="nav-link" data-spy="tentang" href="#tentang">Tentang</a>
       <a class="nav-link" data-spy="lokasi" href="#lokasi">Lokasi</a>
     </nav>
-    <a class="btn btn-primary btn-sm nav-cta" id="navWa" href="#" target="_blank" rel="noopener">
+    <a class="btn btn-primary btn-sm nav-cta js-wa" href="#" target="_blank" rel="noopener">
       <i data-lucide="message-circle"></i> Hubungi Kami
     </a>
     <button class="burger" id="burger" aria-label="Buka menu"><i data-lucide="menu"></i></button>
@@ -498,12 +480,9 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
       </div>
     </div>
 
-    <!-- Ilustrasi teknisi sedang service laptop -->
     <div class="hero-visual">
       <svg class="hero-fig" viewBox="0 0 560 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Teknisi Liwa Net sedang mengecek laptop">
-        <!-- latar -->
         <circle cx="280" cy="230" r="205" fill="#DBEAFE"/>
-        <!-- gear dekoratif -->
         <g transform="translate(120,105)">
           <g fill="#2563EB" opacity=".18">
             <circle r="30"/>
@@ -518,14 +497,11 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
           </g>
           <circle r="13" fill="#DBEAFE"/>
         </g>
-        <!-- sparkle dekor -->
         <path d="M0 -11 L2.6 -2.6 L11 0 L2.6 2.6 L0 11 L-2.6 2.6 L-11 0 L-2.6 -2.6 Z" transform="translate(438,86)" fill="#F59E0B" opacity=".85"/>
         <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" transform="translate(330,55)" fill="#2563EB" opacity=".5"/>
-        <!-- meja -->
         <rect x="58" y="368" width="444" height="14" rx="7" fill="#B9C6DC"/>
         <rect x="96" y="382" width="13" height="60" rx="4" fill="#A5B4CC"/>
         <rect x="451" y="382" width="13" height="60" rx="4" fill="#A5B4CC"/>
-        <!-- laptop di meja -->
         <rect x="168" y="250" width="148" height="98" rx="9" fill="#1B2537" stroke="#2E3B54"/>
         <rect x="177" y="259" width="130" height="80" rx="5" fill="#0A1424"/>
         <text x="242" y="296" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#7EA6F4">LIWA NET</text>
@@ -537,17 +513,13 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
         <rect x="206" y="354" width="14" height="4" rx="1.5" fill="#33415F"/><rect x="224" y="354" width="14" height="4" rx="1.5" fill="#33415F"/>
         <rect x="242" y="354" width="14" height="4" rx="1.5" fill="#33415F"/><rect x="260" y="354" width="14" height="4" rx="1.5" fill="#33415F"/>
         <rect x="278" y="354" width="14" height="4" rx="1.5" fill="#33415F"/><rect x="296" y="354" width="14" height="4" rx="1.5" fill="#33415F"/>
-        <!-- teknisi -->
-        <!-- lengan belakang -->
         <path d="M436 232 Q452 268 442 300" stroke="#1D4ED8" stroke-width="23" fill="none" stroke-linecap="round"/>
         <circle cx="442" cy="306" r="10.5" fill="#EEB98E"/>
-        <!-- badan / baju kerja -->
         <rect x="352" y="208" width="92" height="126" rx="30" fill="#2563EB"/>
         <path d="M378 208 L398 230 L418 208 Z" fill="#1D4ED8"/>
         <rect x="416" y="246" width="17" height="23" rx="3" fill="#F8FAFC"/>
         <rect x="419" y="251" width="11" height="3" rx="1.5" fill="#2563EB"/>
         <rect x="419" y="257" width="8" height="3" rx="1.5" fill="#CBD5E1"/>
-        <!-- lengan depan + obeng (bergerak) -->
         <g class="arm-work">
           <path d="M360 236 Q328 262 316 296" stroke="#2563EB" stroke-width="23" fill="none" stroke-linecap="round"/>
           <circle cx="315" cy="300" r="10.5" fill="#EEB98E"/>
@@ -555,7 +527,6 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
           <line x1="316" y1="298" x2="300" y2="282" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round"/>
           <path class="spark" d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" transform="translate(296,277)" fill="#F59E0B"/>
         </g>
-        <!-- kepala -->
         <circle cx="398" cy="165" r="31" fill="#263043"/>
         <circle cx="398" cy="182" r="26" fill="#EEB98E"/>
         <circle cx="385" cy="180" r="3.2" fill="#263043"/>
@@ -573,7 +544,6 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
   </div>
 </section>
 
-<!-- Marquee brand -->
 <div class="marq" aria-hidden="true">
   <div class="marq-track" id="marqTrack"></div>
 </div>
@@ -590,13 +560,13 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
       <button class="q-card rv" data-goto-cat="baru">
         <span class="q-ico"><i data-lucide="laptop"></i></span>
         <h3>Laptop Baru</h3>
-        <p>Laptop resmi bergaransi untuk kerja, kuliah, dan gaming.</p>
+        <p>Harga sesuai pricelist resmi — Acer, ASUS, Lenovo, bergaransi.</p>
         <span class="q-go">Lihat katalog <i data-lucide="arrow-right"></i></span>
       </button>
       <button class="q-card rv" data-goto-cat="second" style="transition-delay:.08s">
         <span class="q-ico"><i data-lucide="recycle"></i></span>
         <h3>Laptop Second</h3>
-        <p>Unit bekas terkurasi, sudah melewati 10 titik pengecekan.</p>
+        <p>Unit terkurasi, mulus & siap pakai — mulai 1 jutaan!</p>
         <span class="q-go">Lihat katalog <i data-lucide="arrow-right"></i></span>
       </button>
       <button class="q-card rv" data-goto-service="Laptop" style="transition-delay:.16s">
@@ -627,9 +597,9 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 <section class="katalog" id="laptop">
   <div class="container">
     <div class="sec-head rv">
-      <span class="eyebrow">Katalog</span>
-      <h2>Laptop Pilihan di Liwa Net</h2>
-      <p>Temukan laptop sesuai kebutuhan dan budget kamu. Semua unit bisa dicek &amp; dites langsung di toko.</p>
+      <span class="eyebrow">Katalog &amp; Pricelist</span>
+      <h2>Laptop &amp; Printer Pilihan di Liwa Net</h2>
+      <p>Harga sesuai pricelist resmi — semua unit bisa dicek &amp; dites langsung di toko. Stok &amp; harga bisa berubah, chat kami dulu sebelum datang.</p>
     </div>
     <div class="f-row rv">
       <div class="f-chips" id="catChips">
@@ -637,13 +607,14 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
         <button class="fchip active" data-cat="semua">Semua</button>
         <button class="fchip" data-cat="baru">Baru</button>
         <button class="fchip" data-cat="second">Second</button>
+        <button class="fchip" data-cat="printer">Printer</button>
         <button class="fchip" data-cat="gaming">Gaming</button>
         <button class="fchip" data-cat="office">Office</button>
         <button class="fchip" data-cat="pelajar">Pelajar</button>
       </div>
       <div class="searchbar">
         <i data-lucide="search"></i>
-        <input type="text" id="searchInput" placeholder="Cari laptop… mis. ThinkPad" autocomplete="off">
+        <input type="text" id="searchInput" placeholder="Cari… mis. Acer, HP 14s, EcoTank" autocomplete="off">
       </div>
     </div>
     <div class="f-chips rv" id="budgetChips" style="margin-bottom:6px">
@@ -665,8 +636,8 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
   <div class="container s-grid">
     <div class="rv">
       <span class="eyebrow">Laptop Second</span>
-      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px">Laptop Second Pilihan</h2>
-      <p style="color:var(--muted)">Laptop bekas yang telah melalui pengecekan menyeluruh sebelum ditawarkan kepada pelanggan. Bukan sekadar "laptop bekas" — setiap unit kami kurasi.</p>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px">Second Terkurasi, Bukan Asal Bekas</h2>
+      <p style="color:var(--muted)">HP, ASUS, Dell, sampai Advan — setiap unit lolos <b>10 titik pengecekan</b>, kondisi mulus, dan siap pakai. Unit termurah mulai <b>satu jutaan</b>!</p>
       <div class="check-grid" id="checkGrid"></div>
       <button class="btn btn-primary" data-goto-cat="second"><i data-lucide="recycle"></i> Lihat Semua Laptop Second</button>
     </div>
@@ -710,122 +681,132 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
         </div>
         <ul class="svc-items">
           <li><i data-lucide="printer"></i> Tidak Bisa Print</li>
-          <li><i data-lucide="droplets"></i> Cleaning Printer</li>
-          <li><i data-lucide="pen-tool"></i> Masalah Tinta</li>
           <li><i data-lucide="align-justify"></i> Hasil Print Bergaris</li>
-          <li><i data-lucide="settings"></i> Maintenance</li>
-          <li><i data-lucide="hammer"></i> Perbaikan Hardware</li>
+          <li><i data-lucide="droplets"></i> Cleaning Head &amp; Nozzle</li>
+          <li><i data-lucide="pen-tool"></i> Masalah Tinta &amp; Bujet</li>
+          <li><i data-lucide="file-minus"></i> Kertas Macet / Jam</li>
+          <li><i data-lucide="layers"></i> Ganti Bantalan (Waste)</li>
+          <li><i data-lucide="rotate-ccw"></i> Reset Waste Ink</li>
+          <li><i data-lucide="download"></i> Install Driver &amp; Sharing</li>
+          <li><i data-lucide="scan-line"></i> Scan Tidak Jalan</li>
+          <li><i data-lucide="wrench"></i> General Repair</li>
         </ul>
       </div>
       <div class="svc-col it rv" style="transition-delay:.16s">
         <div class="svc-col-head">
           <span class="q-ico"><i data-lucide="cctv"></i></span>
-          <div><h3>IT &amp; Pemasangan CCTV</h3><p>Untuk rumah, toko, &amp; kantor</p></div>
+          <div><h3>Kebutuhan IT &amp; CCTV</h3><p>Untuk rumah, warnet, sampai kantor</p></div>
         </div>
         <ul class="svc-items">
-          <li><i data-lucide="cctv"></i> Pemasangan CCTV</li>
-          <li><i data-lucide="wifi"></i> Instalasi WiFi &amp; Jaringan</li>
-          <li><i data-lucide="monitor"></i> Maintenance Komputer</li>
-          <li><i data-lucide="network"></i> Setup Kantor &amp; Warnet</li>
-          <li><i data-lucide="cable"></i> Rapikan Kabel &amp; Rack</li>
-          <li><i data-lucide="lightbulb"></i> Konsultasi Kebutuhan IT</li>
+          <li><i data-lucide="cctv"></i> Pemasangan CCTV 2–8 Kamera</li>
+          <li><i data-lucide="wifi"></i> Setting Jaringan &amp; WiFi</li>
+          <li><i data-lucide="cable"></i> Instalasi Kabel &amp; Crimping</li>
+          <li><i data-lucide="briefcase"></i> Maintenance Komputer Kantor</li>
+          <li><i data-lucide="cpu"></i> Rakit PC &amp; Upgrade</li>
+          <li><i data-lucide="app-window"></i> Install Windows &amp; Software</li>
         </ul>
       </div>
     </div>
-    <div class="svc-perks">
-      <div class="perk rv"><i data-lucide="shield-check"></i> Garansi servis 30 hari</div>
-      <div class="perk rv" style="transition-delay:.06s"><i data-lucide="zap"></i> Pengerjaan 1–3 hari</div>
-      <div class="perk rv" style="transition-delay:.12s"><i data-lucide="badge-check"></i> Sparepart bergaransi</div>
-      <div class="perk rv" style="transition-delay:.18s"><i data-lucide="truck"></i> Antar-jemput area Liwa</div>
+    <div class="svc-perks rv">
+      <div class="perk"><i data-lucide="search"></i> Diagnosa Gratis</div>
+      <div class="perk"><i data-lucide="wallet"></i> Harga Transparan</div>
+      <div class="perk"><i data-lucide="shield-check"></i> Garansi Pengerjaan</div>
+      <div class="perk"><i data-lucide="badge-check"></i> Teknisi Berpengalaman</div>
     </div>
-
-    <!-- Booking Service -->
     <div class="bk-grid">
       <div class="panel rv">
         <div class="panel-head">
-          <h3>Booking Service</h3>
-          <p>Isi form di bawah, permintaanmu langsung terkirim ke WhatsApp kami.</p>
+          <h3>Booking Service / Kebutuhan IT</h3>
+          <p>Isi form — pesanan kamu otomatis tersambung ke WhatsApp kami.</p>
         </div>
-        <form class="f-grid" id="bookingForm" novalidate>
+        <form id="bkForm" class="f-grid" novalidate>
           <div class="field">
-            <label for="bkNama">Nama <b>*</b></label>
-            <input type="text" id="bkNama" placeholder="Nama kamu">
+            <label>Nama Kamu <b>*</b></label>
+            <input id="bkNama" type="text" placeholder="mis. Budi Hartono">
             <span class="err-msg">Nama wajib diisi.</span>
           </div>
           <div class="field">
-            <label for="bkWa">Nomor WhatsApp <b>*</b></label>
-            <input type="tel" id="bkWa" placeholder="08xx-xxxx-xxxx">
-            <span class="err-msg">Masukkan nomor WA yang valid.</span>
-          </div>
-          <div class="field">
-            <label for="bkJenis">Jenis Perangkat</label>
-            <select id="bkJenis"><option>Laptop</option><option>Printer</option><option>CCTV &amp; Jaringan</option></select>
-          </div>
-          <div class="field">
-            <label for="bkMerk">Merk</label>
-            <input type="text" id="bkMerk" placeholder="Contoh: ASUS">
+            <label>No. WhatsApp <b>*</b></label>
+            <input id="bkWa" type="tel" inputmode="tel" placeholder="08xx xxxx xxxx">
+            <span class="err-msg">Nomor WhatsApp tidak valid.</span>
           </div>
           <div class="field f-full">
-            <label for="bkModel">Model</label>
-            <input type="text" id="bkModel" placeholder="Contoh: VivoBook 14">
+            <label>Jenis Layanan <b>*</b></label>
+            <select id="bkJenis">
+              <option value="Service Laptop">Service Laptop</option>
+              <option value="Service Printer">Service Printer</option>
+              <option value="Pemasangan CCTV">Pemasangan CCTV</option>
+              <option value="Kebutuhan IT / Jaringan">Kebutuhan IT / Jaringan</option>
+              <option value="Jual Beli / Tukar Tambah">Jual Beli / Tukar Tambah</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
           </div>
           <div class="field f-full">
-            <label for="bkKeluhan">Keluhan <b>*</b></label>
-            <textarea id="bkKeluhan" placeholder="Ceritakan masalah perangkatmu… mis. laptop cepat panas dan mati sendiri."></textarea>
-            <span class="err-msg">Ceritakan keluhanmu (min. 10 karakter).</span>
+            <label>Ceritakan Keluhan / Kebutuhan <b>*</b></label>
+            <textarea id="bkKet" placeholder="mis. Laptop tidak bisa nyala, sudah dicoba charge 1 jam tetap mati…"></textarea>
+            <span class="err-msg">Ceritakan sedikit keluhannya ya.</span>
           </div>
-          <div class="f-full" style="display:grid;gap:12px">
-            <button type="submit" class="btn btn-primary"><i data-lucide="send"></i> Kirim Permintaan Service</button>
-            <span class="form-note"><i data-lucide="info"></i> Kamu akan diarahkan ke WhatsApp dengan pesan otomatis. WhatsApp kami aktif 24 jam — chat kapan saja.</span>
+          <div class="f-full" style="display:flex;flex-direction:column;gap:12px">
+            <button type="submit" class="btn btn-primary" style="width:100%"><i data-lucide="send"></i> Kirim Booking via WhatsApp</button>
+            <span class="form-note"><i data-lucide="info"></i> Data kamu hanya dipakai untuk menghubungi via WhatsApp — tidak disimpan di website.</span>
           </div>
         </form>
-        <div class="bk-success" id="bkSuccess"></div>
-      </div>
-
-      <div class="panel rv" style="transition-delay:.1s">
-        <div class="panel-head">
-          <h3>Kenapa Service di Liwa Net?</h3>
-          <p>Bukan cuma benerin — kami pastikan kamu paham apa yang dikerjakan.</p>
+        <div class="bk-success" id="bkSuccess">
+          <h4><i data-lucide="badge-check"></i> Booking Siap Dikirim!</h4>
+          <p>WhatsApp kamu sudah terbuka dengan pesan otomatis — tinggal tekan <b>Kirim</b>. Kami balas secepatnya.</p>
         </div>
-        <ul class="trade-checks">
-          <li><i data-lucide="check"></i> Diagnosa &amp; konsultasi gratis dulu</li>
-          <li><i data-lucide="check"></i> Biaya disepakati sebelum dikerjakan</li>
-          <li><i data-lucide="check"></i> Data kamu aman, tidak dilihat sembarangan</li>
-          <li><i data-lucide="check"></i> Garansi servis 30 hari, kalau balik lagi gratis</li>
-        </ul>
-        <a class="btn btn-wa" style="width:100%" target="_blank" rel="noopener" id="btnWaSvc"><i data-lucide="message-circle"></i> Chat Teknisi via WhatsApp</a>
-        <p style="margin-top:14px" class="form-note"><span class="dot" style="margin-top:4px"></span>&nbsp;WhatsApp aktif <b style="color:var(--text)">&nbsp;24 jam</b> — dibalas secepatnya kapan pun kamu chat.</p>
+      </div>
+      <div class="panel rv" style="transition-delay:.08s">
+        <div class="panel-head">
+          <h3>Lebih Suka Chat Langsung?</h3>
+          <p>WhatsApp kami aktif 24 jam — di luar jam toko pun tetap dibalas.</p>
+        </div>
+        <a class="btn btn-wa js-wa" style="width:100%" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat WhatsApp Sekarang</a>
+        <div class="l-addr" style="margin:18px 0 0">
+          <span class="q-ico"><i data-lucide="clock"></i></span>
+          <div><b>Jam Toko</b><p>Senin–Sabtu 08.30–17.30 · Minggu 09.00–14.00</p></div><!-- sesuaikan jam -->
+        </div>
+        <div class="l-addr" style="margin:14px 0 0">
+          <span class="q-ico"><i data-lucide="map-pin"></i></span>
+          <div><b>Lokasi</b><p>Sebarus, Balik Bukit, Lampung Barat — unit bisa dites langsung di toko.</p></div>
+        </div>
+        <div class="l-addr" style="margin:14px 0 0">
+          <span class="q-ico"><i data-lucide="badge-check"></i></span>
+          <div><b>Diagnosa Gratis</b><p>Bayar setelah harga disepakati. Transparan sejak awal.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ JUAL BELI ============ -->
-<section class="trade" id="jual">
+<section class="trade" id="trade">
   <div class="container t-grid">
     <div class="rv">
-      <span class="eyebrow">Jual Beli</span>
-      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px">Punya Laptop Bekas?</h2>
-      <p style="color:var(--muted)">Ingin menjual atau upgrade laptop kamu? Kami beli dengan harga wajar — proses transparan, bayar tunai di tempat.</p>
+      <span class="eyebrow">Jual Beli &amp; Tukar Tambah</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px">Jual Laptop Lama, Dapatkan yang Baru</h2>
+      <p style="color:var(--muted)">Terima jual beli unit second — kondisi apa saja, harga jujur. Bisa juga tukar tambah dengan laptop baru dari pricelist kami.</p>
       <ul class="t-steps">
-        <li><span class="t-num">1</span><div><b>Chat &amp; kirim spesifikasi</b><p>Kirim merk, kondisi, dan RAM/storage lewat WhatsApp — kami balas dengan estimasi harga.</p></div></li>
-        <li><span class="t-num">2</span><div><b>Cek &amp; appraise</b><p>Bawa unit ke toko, kami cek kondisi di depan kamu.</p></div></li>
-        <li><span class="t-num">3</span><div><b>Deal &amp; bayar</b><p>Setuju dengan harga? Bayar tunai langsung di tempat.</p></div></li>
+        <li><span class="t-num">1</span><div><b>Chat / Datang ke Toko</b><p>Ceritakan unit yang mau dijual atau kebutuhan laptop barumu.</p></div></li>
+        <li><span class="t-num">2</span><div><b>Cek Unit Bersama</b><p>Kami periksa kondisi di depan kamu — no tipu-tipu.</p></div></li>
+        <li><span class="t-num">3</span><div><b>Deal Harga</b><p>Harga terbaik, langsung cair di tempat.</p></div></li>
+        <li><span class="t-num">4</span><div><b>Tukar Tambah (Opsional)</b><p>Tambah selisih, bawa pulang laptop baru bergaransi.</p></div></li>
       </ul>
     </div>
-    <div class="panel rv" style="transition-delay:.1s">
-      <div class="panel-head">
-        <h3>Kenapa Jual ke Liwa Net?</h3>
-        <p>Harga jujur, proses transparan, bayar langsung di tempat.</p>
+    <div class="rv" style="transition-delay:.1s">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Mau Jual / Tukar Tambah?</h3>
+          <p>Kirim spek &amp; kondisi laptop kamu, kami balas dengan estimasi harga.</p>
+        </div>
+        <ul class="trade-checks">
+          <li><i data-lucide="check"></i> Laptop semua merk &amp; kondisi diterima</li>
+          <li><i data-lucide="check"></i> Penilaian transparan di depan kamu</li>
+          <li><i data-lucide="check"></i> Data dijamin dihapus bersih (secure wipe)</li>
+          <li><i data-lucide="check"></i> Bisa plus selisih ke laptop baru bergaransi</li>
+        </ul>
+        <a class="btn btn-wa js-wa" style="width:100%" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat Harga Tukar Tambah</a>
       </div>
-      <ul class="trade-checks">
-        <li><i data-lucide="check"></i> Penilaian harga di depan kamu, terbuka</li>
-        <li><i data-lucide="check"></i> Bayar tunai langsung di tempat</li>
-        <li><i data-lucide="check"></i> Data di laptop kami bantu hapus total</li>
-        <li><i data-lucide="check"></i> Bisa trade-up: tambah bayar, ganti laptop baru</li>
-      </ul>
-      <a class="btn btn-wa" style="width:100%" target="_blank" rel="noopener" id="btnWaTrade"><i data-lucide="message-circle"></i> Konsultasikan Laptopmu</a>
-      <p style="margin-top:14px" class="form-note"><span class="dot" style="margin-top:4px"></span>&nbsp;Kirim spesifikasi laptopmu kapan saja — WhatsApp aktif <b style="color:var(--text)">&nbsp;24 jam</b>.</p>
     </div>
   </div>
 </section>
@@ -833,25 +814,24 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 <!-- ============ ULASAN ============ -->
 <section class="ulasan" id="ulasan">
   <div class="container">
-    <div class="sec-head rv" style="text-align:center;margin-inline:auto">
+    <div class="sec-head rv" style="text-align:center">
       <span class="eyebrow" style="justify-content:center">Testimoni</span>
-      <h2>Apa Kata Pelanggan?</h2>
-      <p style="margin-inline:auto">Cerita nyata dari mereka yang sudah belanja dan servis di Liwa Net.</p>
+      <h2>Kata Mereka yang Sudah Belanja</h2>
+      <p style="margin-inline:auto">Kepercayaan pelanggan Liwa, Balik Bukit, dan sekitarnya adalah prioritas kami.</p>
     </div>
     <div class="t-wrap rv">
       <div class="t-track" id="tTrack"></div>
       <div class="t-nav">
-        <button class="t-arrow" id="tPrev" aria-label="Ulasan sebelumnya"><i data-lucide="chevron-left"></i></button>
+        <button class="t-arrow" id="tPrev" aria-label="Sebelumnya"><i data-lucide="chevron-left"></i></button>
         <div class="t-dots" id="tDots"></div>
-        <button class="t-arrow" id="tNext" aria-label="Ulasan berikutnya"><i data-lucide="chevron-right"></i></button>
+        <button class="t-arrow" id="tNext" aria-label="Berikutnya"><i data-lucide="chevron-right"></i></button>
       </div>
     </div>
     <div class="review-cta rv">
-      <span class="eyebrow" style="justify-content:center">Google Review</span>
-      <h3 style="margin-top:12px">Puas dengan Layanan Liwa Net?</h3>
-      <p>Bantu kami tumbuh dengan memberikan ulasan di Google Maps. Ulasanmu sangat berarti.</p>
+      <h3>Pernah Belanja di Liwa Net?</h3>
+      <p>Ulasan kamu sangat berarti buat kami dan membantu pelanggan lain.</p>
       <div class="rv-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-      <a class="btn btn-primary" href="#" target="_blank" rel="noopener" id="btnReview"><i data-lucide="star"></i> Berikan Ulasan</a>
+      <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Liwa+Net+Balik+Bukit+Lampung+Barat" target="_blank" rel="noopener"><i data-lucide="star"></i> Tulis Ulasan di Google</a>
     </div>
   </div>
 </section>
@@ -861,30 +841,31 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
   <div class="container">
     <div class="sec-head rv">
       <span class="eyebrow">Lokasi</span>
-      <h2>Kunjungi Toko Kami</h2>
-      <p>Mampir langsung untuk lihat unit, tes dulu sebelum beli, atau konsultasi gratis.</p>
+      <h2>Mampir ke Toko Kami</h2>
+      <p>Semua unit bisa dicek &amp; dites langsung sebelum beli.</p>
     </div>
     <div class="l-grid">
       <div class="map-box rv">
-        <iframe src="https://www.google.com/maps?q=Sebarus,+Balik+Bukit,+Kabupaten+Lampung+Barat,+Lampung&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta lokasi Liwa Net" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps?q=Balik%20Bukit%2C%20Lampung%20Barat&output=embed" loading="lazy" title="Peta Lokasi Liwa Net" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="l-info rv" style="transition-delay:.1s">
-        <span class="eyebrow">Alamat</span>
+        <h3 style="font-size:20px">Kunjungi Liwa Net</h3>
         <div class="l-addr">
           <span class="q-ico"><i data-lucide="map-pin"></i></span>
-          <div>
-            <b>Liwa Net</b>
-            <p>Sebarus, Kecamatan Balik Bukit<br>Kabupaten Lampung Barat, Lampung, Indonesia</p>
-          </div>
+          <div><b>Alamat</b><p>Sebarus, Balik Bukit, Kab. Lampung Barat, Lampung</p></div>
         </div>
-        <div class="l-hours">
-          <div><span>Senin – Sabtu</span><b>07.00 – 17.00 WIB</b></div>
-          <div><span>Minggu</span><b class="closed">Tutup</b></div>
-          <div><span>WhatsApp</span><b style="color:var(--ok)">Online 24 Jam</b></div>
+        <div class="l-addr" style="margin:0 0 22px">
+          <span class="q-ico"><i data-lucide="phone"></i></span>
+          <div><b>WhatsApp / Telepon</b><p>0851-8451-5015</p></div>
+        </div>
+        <div class="l-hours"><!-- sesuaikan jam -->
+          <div><span>Senin – Sabtu</span><b>08.30 – 17.30</b></div>
+          <div><span>Minggu</span><b>09.00 – 14.00</b></div>
+          <div><span>WhatsApp</span><b style="color:var(--ok)">Aktif 24 Jam</b></div>
         </div>
         <div class="l-btns">
-          <a class="btn btn-primary" href="#" target="_blank" rel="noopener" id="btnMaps1"><i data-lucide="map-pin"></i> Buka di Google Maps</a>
-          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener" id="btnReview2"><i data-lucide="star"></i> Berikan Ulasan</a>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Balik+Bukit+Lampung+Barat" target="_blank" rel="noopener"><i data-lucide="map-pin"></i> Rute Google Maps</a>
+          <a class="btn btn-ghost js-wa" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat Dulu Sebelum Datang</a>
         </div>
       </div>
     </div>
@@ -896,20 +877,20 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
   <div class="container a-grid">
     <div class="rv">
       <span class="eyebrow">Tentang Kami</span>
-      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 14px">Tentang Liwa Net</h2>
-      <p style="color:var(--muted)">Liwa Net hadir sebagai tempat untuk memenuhi kebutuhan komputer dan teknologi di Lampung Barat — mulai dari jual beli laptop baru dan second, service laptop dan printer, pemasangan CCTV, hingga berbagai kebutuhan IT — lengkap dengan purna jual yang benar-benar kami tanggung jawabkan.</p>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 10px">Toko IT Lokal yang Paham Kebutuhan Kamu</h2>
+      <p style="color:var(--muted)">Liwa Net melayani jual beli laptop baru &amp; second, service laptop &amp; printer, hingga pemasangan CCTV di wilayah Liwa, Balik Bukit, dan sekitarnya. Belanja IT di sini bisa tanya-tanya dulu, cek unit langsung, dan harga jujur sesuai pricelist.</p>
       <div class="a-points">
-        <div class="a-point"><i data-lucide="laptop"></i> Laptop Baru &amp; Second</div>
-        <div class="a-point"><i data-lucide="wrench"></i> Service Laptop</div>
-        <div class="a-point"><i data-lucide="printer"></i> Service Printer</div>
-        <div class="a-point"><i data-lucide="cctv"></i> IT &amp; Pemasangan CCTV</div>
+        <div class="a-point"><i data-lucide="shield-check"></i> Garansi toko unit second</div>
+        <div class="a-point"><i data-lucide="wallet"></i> Harga transparan sesuai pricelist</div>
+        <div class="a-point"><i data-lucide="wrench"></i> Teknisi in-house berpengalaman</div>
+        <div class="a-point"><i data-lucide="message-circle"></i> Dibalas cepat, 24 jam</div>
       </div>
     </div>
     <div class="stats rv" style="transition-delay:.1s">
-      <div class="stat"><b data-count="5" data-suffix="+">0</b><span>Tahun melayani</span></div>
-      <div class="stat"><b data-count="1000" data-suffix="+">0</b><span>Laptop terjual</span></div>
-      <div class="stat"><b data-count="900" data-suffix="+">0</b><span>Perangkat diservis</span></div>
-      <div class="stat"><b data-count="4.9" data-dec="1">0</b><span>Rating Google</span></div>
+      <div class="stat"><b>4.9<span style="color:var(--warn)">★</span></b><span>Rating di Google</span></div>
+      <div class="stat"><b>24/7</b><span>WhatsApp aktif setiap hari</span></div>
+      <div class="stat"><b>10</b><span>Titik pengecekan unit second</span></div>
+      <div class="stat"><b>1000+</b><span>Unit terjual</span></div><!-- sesuaikan angka -->
     </div>
   </div>
 </section>
@@ -918,14 +899,12 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
 <section class="kontak" id="kontak">
   <div class="container">
     <div class="k-card rv">
-      <span class="eyebrow" style="justify-content:center">Konsultasi Gratis</span>
-      <h2>Butuh Bantuan?</h2>
-      <p>Konsultasikan kebutuhan laptop, printer, CCTV, atau masalah perangkatmu kepada Liwa Net — gratis, tanpa dipaksa beli.</p>
-      <div class="k-online"><span class="dot"></span> WhatsApp Aktif 24 Jam · +62 812-7444-1118</div>
+      <span class="k-online"><span class="dot"></span> WhatsApp Aktif 24 Jam</span>
+      <h2>Mau Tanya Dulu? Santai, Chat Aja!</h2>
+      <p>Tanya stok, minta foto unit terbaru, atau konsultasi kebutuhan — semuanya gratis dan dibalas cepat.</p>
       <div class="k-btns">
-        <a class="btn btn-wa" href="#" target="_blank" rel="noopener" id="btnWa1"><i data-lucide="message-circle"></i> WhatsApp</a>
-        <a class="btn btn-ghost" href="#lokasi"><i data-lucide="map-pin"></i> Lokasi</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener" id="btnReview3"><i data-lucide="star"></i> Google Maps</a>
+        <a class="btn btn-wa js-wa" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> 0851-8451-5015</a>
+        <a class="btn btn-ghost" href="https://instagram.com/liwa.net_lampung" target="_blank" rel="noopener"><i data-lucide="instagram"></i> liwa.net_lampung</a>
       </div>
     </div>
   </div>
@@ -941,542 +920,661 @@ footer{border-top:1px solid var(--line);background:#EEF2F7;padding:56px 0 0}
           <span class="logo-mark"><i data-lucide="monitor"></i></span>
           LIWA<span>NET</span>
         </a>
-        <p>Solusi Komputer &amp; Teknologi<br>di Lampung Barat.</p>
+        <p>Solusi komputer, laptop, printer &amp; CCTV satu atap — melayani Liwa, Balik Bukit, dan sekitarnya.</p>
+        <div class="ft-addr"><i data-lucide="map-pin"></i><span>Sebarus, Balik Bukit, Kab. Lampung Barat</span></div>
       </div>
       <div class="ft-col">
-        <h4>Quick Links</h4>
+        <h4>Jelajahi</h4>
         <ul>
           <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#laptop">Laptop</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#laptop">Katalog Laptop &amp; Printer</a></li>
+          <li><a href="#service">Service Center</a></li>
+          <li><a href="#tentang">Tentang</a></li>
           <li><a href="#lokasi">Lokasi</a></li>
         </ul>
       </div>
       <div class="ft-col">
         <h4>Layanan</h4>
         <ul>
-          <li><a href="#laptop" data-goto-cat="baru">Laptop Baru</a></li>
-          <li><a href="#laptop" data-goto-cat="second">Laptop Second</a></li>
+          <li><a href="#laptop">Laptop Baru</a></li>
+          <li><a href="#second">Laptop Second</a></li>
           <li><a href="#service">Service Laptop &amp; Printer</a></li>
-          <li><a href="#service">IT &amp; Pemasangan CCTV</a></li>
+          <li><a href="#trade">Jual Beli &amp; Tukar Tambah</a></li>
+          <li><a href="#service">CCTV &amp; Kebutuhan IT</a></li>
         </ul>
       </div>
       <div class="ft-col">
-        <h4>Lokasi &amp; Jam Buka</h4>
-        <div class="ft-addr">
-          <i data-lucide="map-pin"></i>
-          <span>Sebarus, Balik Bukit<br>Kabupaten Lampung Barat<br>Lampung, Indonesia</span>
-        </div>
-        <div class="ft-addr" style="margin-top:12px">
-          <i data-lucide="message-circle"></i>
-          <span>Senin – Sabtu: 07.00 – 17.00<br>WhatsApp: Online 24 Jam</span>
-        </div>
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp: 0851-8451-5015</a></li>
+          <li><a href="https://instagram.com/liwa.net_lampung" target="_blank" rel="noopener">Instagram: @liwa.net_lampung</a></li>
+        </ul>
+        <div class="ft-addr"><i data-lucide="clock"></i><span>Sen–Sab 08.30–17.30 · Minggu 09.00–14.00</span></div>
       </div>
     </div>
     <div class="ft-bottom">
-      <span>© 2026 <b>Liwa Net</b> — All Rights Reserved.</span>
+      <span>© 2025 <b>Liwa Net</b> — Harga dapat berubah sewaktu-waktu.</span>
       <span>Sebarus · Balik Bukit · Lampung Barat</span>
     </div>
   </div>
 </footer>
 
-<!-- FAB WhatsApp -->
-<a class="fab" href="#" target="_blank" rel="noopener" id="fabWa" aria-label="Chat WhatsApp">
-  <i data-lucide="message-circle"></i><span>WhatsApp</span>
+<!-- ============ FLOATING ============ -->
+<a class="fab js-wa" id="fabWa" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <i data-lucide="message-circle"></i><span>Chat Sekarang</span>
 </a>
-
-<!-- Compare tray -->
 <div class="cmp-tray" id="cmpTray">
   <div class="cmp-items" id="cmpItems"></div>
-  <button class="cmp-clear" id="cmpClear">Kosongkan</button>
-  <button class="btn btn-primary btn-sm" id="cmpGo">Bandingkan</button>
+  <div style="display:flex;align-items:center;gap:10px">
+    <button class="btn btn-primary btn-sm" id="cmpOpen"><i data-lucide="scale"></i> Bandingkan</button>
+    <button class="cmp-clear" id="cmpClear">Kosongkan</button>
+  </div>
 </div>
-
-<!-- Toasts -->
 <div class="toasts" id="toasts"></div>
 
-<!-- Modal Detail Produk -->
-<div class="modal" id="pm" role="dialog" aria-modal="true">
+<!-- ============ MODAL DETAIL ============ -->
+<div class="modal" id="pModal" aria-hidden="true">
   <div class="m-overlay" data-close></div>
-  <div class="m-panel" id="pmPanel"></div>
+  <div class="m-panel">
+    <button class="m-close" data-close aria-label="Tutup"><i data-lucide="x"></i></button>
+    <div class="pm-grid">
+      <div class="pm-art" id="pmArt"></div>
+      <div class="pm-info" id="pmInfo"></div>
+    </div>
+  </div>
 </div>
 
-<!-- Modal Compare -->
-<div class="modal" id="cm" role="dialog" aria-modal="true">
+<!-- ============ MODAL BANDINGKAN ============ -->
+<div class="modal" id="cmpModal" aria-hidden="true">
   <div class="m-overlay" data-close></div>
   <div class="m-panel cm-panel">
     <button class="m-close" data-close aria-label="Tutup"><i data-lucide="x"></i></button>
     <div class="cm-head">
-      <h2>Perbandingan Laptop</h2>
-      <p>Bandingkan spesifikasi samping-ke-samping. Harga terendah &amp; spesifikasi terbesar ditandai.</p>
+      <h2>Bandingkan Unit</h2>
+      <p>Pilih unit terbaik sesuai kebutuhan &amp; budget kamu.</p>
     </div>
-    <div class="cm-scroll" id="cmBody"></div>
+    <div class="cm-scroll"><div id="cmpBody"></div></div>
   </div>
 </div>
 
 <script>
-/* ================================================================
-   KONFIGURASI — ganti bagian ini dengan data asli Liwa Net
-================================================================ */
-const WA_NUMBER  = '6281274441118'; // ← WhatsApp toko: +62 812-7444-1118
-const GMAPS_URL  = 'https://www.google.com/maps/search/?api=1&query=Liwa+Net+Sebarus+Balik+Bukit+Lampung+Barat';
-const REVIEW_URL = GMAPS_URL; // ← bisa diganti link writereview?placeid=... dari Google
+/* ================= KONFIG ================= */
+const WA_NUMBER = '6285184515015'; // 0851-8451-5015 (sesuai pricelist)
+const IG = 'https://instagram.com/liwa.net_lampung';
+const waLink = t => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
+const rupiah = n => 'Rp ' + n.toLocaleString('id-ID');
 
-/* ============ UTIL ============ */
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
-const fmtRp = n => 'Rp ' + n.toLocaleString('id-ID');
-const waLink = t => 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(t);
-function icons(){ try{ lucide.createIcons({attrs:{'stroke-width':1.8}}); }catch(e){} }
-function toast(msg, type='ok'){
-  const t = document.createElement('div');
-  t.className = 'toast ' + type;
-  const ic = type === 'ok' ? 'check' : type === 'bad' ? 'x' : 'info';
-  t.innerHTML = '<i data-lucide="' + ic + '"></i><span>' + msg + '</span>';
-  $('#toasts').appendChild(t); icons();
-  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 320); }, 3000);
-}
-function lockBody(v){ document.body.style.overflow = v ? 'hidden' : ''; }
+function icons(){ try{ lucide.createIcons(); }catch(e){} }
 
-/* ============ DATA PRODUK ============ */
-const CHECKS = ['Keyboard','Touchpad','Display','USB Port','Wi-Fi','Bluetooth','Speaker','Kamera','Battery','Storage'];
-const PRODUCTS = [
-  {id:1, brand:'ASUS', name:'ASUS VivoBook 14', tags:['baru','office'], status:'ready',
-   cpu:'Intel Core i5-1235U', gpu:'Intel Iris Xe', ram:'8 GB', storage:'SSD 512 GB', display:'14" FHD', os:'Windows 11',
-   price:6499000, tint:'#7EA6F4', desc:'Tipis, ringan, dan pas untuk kerja harian maupun kuliah. Sudah include Windows asli.'},
-  {id:2, brand:'Lenovo', name:'Lenovo IdeaPad Slim 3', tags:['baru','office','pelajar'], status:'ready',
-   cpu:'AMD Ryzen 5 7520U', gpu:'AMD Radeon 610M', ram:'8 GB', storage:'SSD 512 GB', display:'15.6" FHD', os:'Windows 11',
-   price:6799000, tint:'#8FD3C7', desc:'Layar besar untuk multitasking sehari-hari dengan baterai yang tahan lama.'},
-  {id:3, brand:'ASUS', name:'ASUS Vivobook Go 14', tags:['baru','pelajar'], status:'ready',
-   cpu:'Intel N100', gpu:'Intel UHD', ram:'8 GB', storage:'SSD 256 GB', display:'14" FHD', os:'Windows 11',
-   price:4299000, tint:'#C4B5FD', desc:'Pilihan paling hemat untuk pelajar — ringan di tangan dan di kantong.'},
-  {id:4, brand:'HP', name:'HP 14s', tags:['baru','pelajar','office'], status:'limited',
-   cpu:'Intel Core i3-1215U', gpu:'Intel UHD', ram:'8 GB', storage:'SSD 256 GB', display:'14" FHD', os:'Windows 11',
-   price:5999000, tint:'#94A3B8', desc:'Bodi ramping dengan performa Core i3 generasi ke-12 yang responsif.'},
-  {id:5, brand:'ASUS', name:'ASUS TUF Gaming F15', tags:['baru','gaming'], status:'ready',
-   cpu:'Intel Core i5-11400H', gpu:'RTX 3050 4GB', ram:'16 GB', storage:'SSD 512 GB', display:'15.6" 144Hz', os:'Windows 11',
-   price:10999000, tint:'#F0A35E', desc:'Sertifikasi MIL-STD, siap untuk gaming berat maupun rendering.'},
-  {id:6, brand:'Acer', name:'Acer Nitro V15', tags:['baru','gaming'], status:'limited',
-   cpu:'Intel Core i5-13420H', gpu:'RTX 4050 6GB', ram:'16 GB', storage:'SSD 512 GB', display:'15.6" 144Hz', os:'Windows 11',
-   price:12499000, tint:'#7EA6F4', desc:'RTX 4050 untuk game AAA dan kerja 3D — stok terakhir.'},
-  {id:7, brand:'Lenovo', name:'Lenovo LOQ 15', tags:['baru','gaming'], status:'ready',
-   cpu:'Intel Core i5-12450HX', gpu:'RTX 3050 6GB', ram:'16 GB', storage:'SSD 512 GB', display:'15.6" 144Hz', os:'Windows 11',
-   price:11499000, tint:'#8FD3C7', desc:'Sistem pendingin besar, nyaman untuk sesi gaming berdurasi lama.'},
-  {id:8, brand:'ASUS', name:'ASUS Zenbook 14 OLED', tags:['baru','office'], status:'sold',
-   cpu:'Intel Core Ultra 5', gpu:'Intel Arc', ram:'16 GB', storage:'SSD 512 GB', display:'14" 2.8K OLED', os:'Windows 11',
-   price:9999000, tint:'#C4B5FD', desc:'Layar OLED 2.8K yang premium, super tipis untuk mobilitas tinggi.'},
-  {id:9, brand:'Lenovo', name:'Lenovo ThinkPad T480', tags:['second','office'], status:'ready',
-   cpu:'Intel Core i5-8250U', gpu:'Intel UHD 620', ram:'8 GB', storage:'SSD 256 GB', display:'14" FHD', os:'Windows 11 Pro',
-   price:4250000, cond:90, condLabel:'Sangat Baik', tint:'#7EA6F4',
-   desc:'Legenda laptop bisnis. Bodi kokoh, keyboard terbaik di kelasnya, dan sangat mudah di-upgrade.'},
-  {id:10, brand:'Dell', name:'Dell Latitude 7490', tags:['second','office'], status:'ready',
-   cpu:'Intel Core i7-8650U', gpu:'Intel UHD 620', ram:'16 GB', storage:'SSD 512 GB', display:'14" FHD', os:'Windows 11 Pro',
-   price:5150000, cond:95, condLabel:'Like New', tint:'#8FD3C7',
-   desc:'Kelas bisnis bekas berspesifikasi tinggi — untuk kerja berat dengan budget terjangkau.'},
-  {id:11, brand:'ASUS', name:'ASUS ROG Strix G531GT', tags:['second','gaming'], status:'ready',
-   cpu:'Intel Core i5-9300H', gpu:'GTX 1650 4GB', ram:'16 GB', storage:'SSD 512 GB', display:'15.6" 120Hz', os:'Windows 11',
-   price:6750000, cond:85, condLabel:'Baik', tint:'#F0A35E',
-   desc:'Gaming second terbaik di kelasnya — sudah SSD, siap main tanpa upgrade lagi.'},
-  {id:12, brand:'HP', name:'HP EliteBook 840 G5', tags:['second','office'], status:'limited',
-   cpu:'Intel Core i5-8350U', gpu:'Intel UHD 620', ram:'8 GB', storage:'SSD 256 GB', display:'14" FHD', os:'Windows 11 Pro',
-   price:3950000, cond:90, condLabel:'Sangat Baik', tint:'#94A3B8',
-   desc:'Tipis, ringan, dan profesional. Unit ex-corporate yang terawati.'},
-  {id:13, brand:'Apple', name:'MacBook Air 2017', tags:['second'], status:'sold',
-   cpu:'Intel Core i5-5350U', gpu:'Intel HD 6000', ram:'8 GB', storage:'SSD 128 GB', display:'13.3"', os:'macOS',
-   price:5900000, cond:88, condLabel:'Sangat Baik', tint:'#C4B5FD',
-   desc:'Klasik yang tetap andal untuk browsing, editing dokumen, dan multimedia.'}
-];
-const STATUS_META = {
-  ready:   {label:'Ready',        cls:'st-ready'},
-  limited: {label:'Stok Terbatas',cls:'st-limited'},
-  sold:    {label:'Sold Out',     cls:'st-sold'}
+/* ================= DATA PRODUK (sesuai pricelist & poster) ================= */
+const BRANDS = {
+  Acer:  {c:'#16A34A', d:'#166534'},
+  ASUS:  {c:'#1D4ED8', d:'#1E3A8A'},
+  Lenovo:{c:'#DC2626', d:'#991B1B'},
+  HP:    {c:'#0284C7', d:'#075985'},
+  Dell:  {c:'#0369A1', d:'#0C4A6E'},
+  Advan: {c:'#475569', d:'#1E293B'},
+  Epson: {c:'#1E40AF', d:'#172554'},
+  Canon: {c:'#DC2626', d:'#7F1D1D'}
 };
 
-/* ============ ILUSTRASI LAPTOP (SVG) ============ */
+const PRODUCTS = [
+  /* ========== LAPTOP BARU (PRICELIST) ========== */
+  {
+    id:'acer-al14-i5', brand:'Acer', name:'Acer Aspire Lite AL14-51M-5296',
+    cat:['baru','office','gaming'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel Core i5-120U', ram:'16GB', storage:'SSD NVMe 512GB', screen:'14" WUXGA',
+    gpu:'Intel Iris Xe', os:'Windows 11 Home',
+    price:14000000,
+    desc:'Laptop baru paling kuat di kelasnya — nyaman untuk kerja, kuliah, multitasking, sampai light gaming. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'acer-al14-n4500', brand:'Acer', name:'Acer Aspire Lite AL14',
+    cat:['baru','office','pelajar'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel N4500', ram:'8GB', storage:'SSD NVMe 512GB', screen:'14" WUXGA',
+    gpu:'Intel UHD', os:'Windows 11 Home',
+    price:8300000,
+    desc:'Teman kerja & kuliah sehari-hari yang ringan dan hemat — storage lega 512GB. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'acer-al13-n355', brand:'Acer', name:'Acer Aspire Lite AL13 N355',
+    cat:['baru','office','pelajar'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel Core i3-N355', ram:'8GB', storage:'SSD NVMe 512GB', screen:'14" WUXGA',
+    gpu:'Intel UHD', os:'Windows 11 Home',
+    price:8900000,
+    desc:'Seri AL13 dengan Intel Core i3-N355 — responsif untuk multitasking ringan sampai menengah. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'asus-go14-e1404fa', brand:'ASUS', name:'ASUS GO 14 E1404FA',
+    cat:['baru','office','pelajar'], type:'laptop', cond:'new', status:'ready',
+    cpu:'AMD Ryzen 3 7320', ram:'8GB', storage:'SSD NVMe 512GB', screen:'14" FHD',
+    gpu:'AMD Radeon', os:'Windows 11 Home',
+    price:8950000,
+    desc:'ASUS GO 14 bertenaga AMD Ryzen 3 7320 — performa ngebut untuk ukuran harga segini. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'asus-a1404va', brand:'ASUS', name:'ASUS A1404VA',
+    cat:['baru','office'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel Core i3-1315U', ram:'8GB', storage:'SSD NVMe 512GB', screen:'14" FHD',
+    gpu:'Intel UHD', os:'Windows 11 Home',
+    price:9600000,
+    desc:'Intel Core i3 generasi ke-13 — pas untuk kerja kantor, kuliah, dan hiburan. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'asus-e1404ta', brand:'ASUS', name:'ASUS E1404TA (N150)',
+    cat:['baru','pelajar'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel N150', ram:'8GB', storage:'SSD NVMe 256GB', screen:'14" FHD TN',
+    gpu:'Intel UHD', os:'Windows 11 Home',
+    price:8300000,
+    desc:'Hemat dan stabil — pilihan pas untuk pelajar dan pekerjaan ringan. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+  {
+    id:'lenovo-ideapad-slim1', brand:'Lenovo', name:'Lenovo IdeaPad Slim 1-14IJL7',
+    cat:['baru','pelajar'], type:'laptop', cond:'new', status:'ready',
+    cpu:'Intel Celeron N4500', ram:'4GB', storage:'SSD NVMe 256GB', screen:'14" HD',
+    gpu:'Intel UHD', os:'Windows 11 Home',
+    price:7900000,
+    desc:'Entry level paling ramah kantong dari Lenovo — ringan dibawa kuliah / sekolah. Bergaransi resmi.',
+    extra:'Garansi resmi 1 tahun'
+  },
+
+  /* ========== LAPTOP SECOND (sesuai postingan) ========== */
+  {
+    id:'advan-second', brand:'Advan', name:'Laptop Second Advan 14"',
+    cat:['second','pelajar'], type:'laptop', cond:'second', status:'limited', condScore:88,
+    cpu:'Intel Celeron N4020 (1.10GHz, 2 Cores 2 Threads)', ram:'4GB DDR4', storage:'128GB eMMC',
+    screen:'14" HD (1366×768)', gpu:'Intel UHD Graphics 600', os:'Windows 10 Home 64-bit',
+    keyboard:'Chiclet Keyboard',
+    priceLabel:'Rp 1 Jutaan', price:1100000,
+    desc:'Unit second paling murah bulan ini! Kondisi mulus & terawat, sudah install Windows 10 Home, langsung siap pakai.',
+    kelengkapan:['Charger Original','Mouse USB','Alas Mouse'],
+    checks:['Kondisi mulus & terawat','Baterai normal','Siap pakai','Garansi toko 1 bulan'],
+    note:'Catatan penting: mines baterai — baterai harus selalu di-charge / nempel charger saat dipakai. Di luar itu semua normal.'
+  },
+  {
+    id:'hp-14s-n4500', brand:'HP', name:'HP 14s Second — Celeron N4500',
+    cat:['second','office','pelajar'], type:'laptop', cond:'second', status:'ready', condScore:92,
+    cpu:'Intel Celeron N4500', ram:'8GB', storage:'SSD 256GB', screen:'14"',
+    os:'Windows 10', extra:'Backlit keyboard',
+    price:null, priceEst:2900000,
+    desc:'Kondisi normal, mulus, dan siap pakai — dengan bonus backlit keyboard. Windows 10 original.'
+  },
+  {
+    id:'asus-a416m', brand:'ASUS', name:'ASUS A416M Second',
+    cat:['second','office','pelajar'], type:'laptop', cond:'second', status:'ready', condScore:90,
+    cpu:'Intel Celeron', gpu:'Intel UHD Graphics', ram:'8GB', storage:'SSD 256GB', screen:'14"',
+    os:'Windows 10', extra:'Backlit keyboard',
+    price:null, priceEst:2500000,
+    desc:'Normal 100%, siap pakai. Tampilan gelap elegan dengan backlit keyboard.'
+  },
+  {
+    id:'hp-athlon', brand:'HP', name:'HP 14 Second — AMD Athlon',
+    cat:['second','office'], type:'laptop', cond:'second', status:'ready', condScore:92,
+    cpu:'AMD Athlon', gpu:'AMD Radeon', ram:'8GB DDR4', storage:'SSD 512GB', screen:'14"',
+    extra:'Backlit keyboard',
+    price:null, priceEst:3400000,
+    desc:'Storage lega 512GB + AMD Radeon — smooth untuk kerja, kuliah, dan hiburan. Normal siap pakai.'
+  },
+  {
+    id:'asus-a416k', brand:'ASUS', name:'ASUS A416K Second',
+    cat:['second','pelajar'], type:'laptop', cond:'second', status:'ready', condScore:88,
+    cpu:'Intel Celeron', ram:'4GB', storage:'SSD 256GB', screen:'14"',
+    os:'Windows 10 Pro', extra:'Backlit keyboard',
+    price:null, priceEst:2100000,
+    desc:'Windows 10 Pro + backlit keyboard, normal siap pakai. Pilihan hemat untuk pelajar.'
+  },
+  {
+    id:'dell-i5', brand:'Dell', name:'Dell Second — Core i5',
+    cat:['second','office'], type:'laptop', cond:'second', status:'ready', condScore:93,
+    cpu:'Intel Core i5', gpu:'Intel HD Graphics', ram:'8GB', storage:'SSD 256GB', screen:'14"',
+    os:'Windows 10 Pro', extra:'Backlit keyboard',
+    price:null, priceEst:4500000,
+    desc:'Kelas bisnis: Core i5 + build solid + backlit keyboard. Unit second terlaris untuk kerja.'
+  },
+  {
+    id:'hp-14s-a9', brand:'HP', name:'HP 14s Second — AMD A9',
+    cat:['second','pelajar'], type:'laptop', cond:'second', status:'ready', condScore:86,
+    cpu:'AMD A9', ram:'8GB', storage:'SSD 128GB', screen:'14"',
+    os:'Windows 10',
+    price:null, priceEst:1900000,
+    desc:'Paling hemat — cocok untuk pelajar: MS Office, browsing, dan belajar online. Normal siap pakai.'
+  },
+
+  /* ========== PRINTER (PRICELIST) ========== */
+  {
+    id:'epson-l3210', brand:'Epson', name:'Epson EcoTank L3210 / L3211',
+    cat:['printer'], type:'printer', status:'ready', price:2750000,
+    fungsi:'Print, Scan, Copy',
+    detail:'Compact integrated tank design · High yield ink bottles · Spill-free, error-free refilling · Borderless printing up to 4R',
+    desc:'Printer tanki serbaguna dari Epson — print, scan, copy dengan biaya cetak super hemat.'
+  },
+  {
+    id:'epson-l121', brand:'Epson', name:'Epson EcoTank L121',
+    cat:['printer'], type:'printer', status:'ready', price:2100000,
+    fungsi:'Print Only',
+    detail:'Kecepatan 9.0 ipm (hitam), 4.8 ipm (berwarna)',
+    desc:'Print only paling irit dari Epson — cocok untuk kebutuhan cetak rumah & sekolah.'
+  },
+  {
+    id:'canon-g1010', brand:'Canon', name:'Canon PIXMA G1010',
+    cat:['printer'], type:'printer', status:'ready', price:1550000,
+    fungsi:'Print Only',
+    detail:'Kecepatan cetak 8.8 ipm (hitam), 5.0 ipm (warna)',
+    desc:'Printer tanki Canon paling terjangkau — irit dan awet.'
+  },
+  {
+    id:'canon-g2010', brand:'Canon', name:'Canon PIXMA G2010',
+    cat:['printer'], type:'printer', status:'ready', price:2200000,
+    fungsi:'Print, Scan, Copy',
+    detail:'Kecepatan cetak 11 ipm (hitam), 6 ipm (warna)',
+    desc:'Print, scan, copy dalam satu unit — hemat biaya per cetak.'
+  },
+  {
+    id:'canon-g2730', brand:'Canon', name:'Canon PIXMA G2730',
+    cat:['printer'], type:'printer', status:'ready', price:2200000,
+    fungsi:'Print, Scan, Copy',
+    detail:'Kecepatan cetak 11 ipm (hitam), 6 ipm (warna)',
+    desc:'Seri tanki Canon dengan fitur lengkap — cocok untuk rumah & UMKM.'
+  }
+];
+
+const CHECKS10 = [
+  ['battery-charging','Baterai & charging'],['keyboard','Keyboard & touchpad'],
+  ['monitor','Layar bebas dead pixel'],['usb','Port USB & HDMI'],
+  ['wifi','WiFi & Bluetooth'],['volume-2','Speaker & audio'],
+  ['camera','Webcam'],['memory-stick','RAM & storage sehat'],
+  ['thermometer','Suhu / thermal normal'],['app-window','Windows & driver rapi']
+];
+
+const REVIEWS = [
+  {t:'Beli HP 14s second di Liwa Net, mulus banget dan harga bersahabat. Dikasih waktu ngetes dulu di tempat. Recommended!',n:'Rina M.',r:'Beli Laptop Second — Balik Bukit',i:'R'},
+  {t:'Printer Epson saya head nyangkut, di sini dibenerin cepat dan harganya masuk akal. Yang sekitar Liwa langsung ke sini aja.',n:'Agus P.',r:'Service Printer — Liwa',i:'A'},
+  {t:'Pasang CCTV 4 kamera hasilnya rapi dan jelas. Digrabek juga bagus, teknisinya sabar banget jelasin aplikasinya.',n:'Hendra S.',r:'Pemasangan CCTV — Sekincau',i:'H'},
+  {t:'Laptop lama lemot, di sini di-upgrade SSD + RAM. Sekarang ngebut, kerja & kuliah lancar. Makasih Liwa Net!',n:'Dewi A.',r:'Upgrade Laptop — Batu Brak',i:'D'}
+];
+
+/* ================= GENERATOR ART SVG ================= */
 function laptopArt(p){
-  let keys = '';
-  for(let r = 0; r < 3; r++)
-    for(let c = 0; c < 12; c++)
-      keys += '<rect x="' + (64 + c*16.5) + '" y="' + (154 + r*6) + '" width="13" height="4" rx="1.2" fill="#28344E"/>';
-  const short = p.cpu.replace('Intel ','').replace('AMD ','').slice(0, 18);
-  return '<svg viewBox="0 0 320 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="' + p.name + '">' +
-    '<rect x="60" y="16" width="200" height="130" rx="10" fill="#1B2537" stroke="#2C3A52"/>' +
-    '<rect x="68" y="24" width="184" height="114" rx="5" fill="#0A1424"/>' +
-    '<path d="M84 138 L170 24 M130 138 L216 24" stroke="rgba(148,163,184,.06)" stroke-width="26"/>' +
-    '<circle cx="160" cy="20.5" r="1.6" fill="#334155"/>' +
-    '<text x="160" y="82" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="25" font-weight="700" fill="' + p.tint + '" opacity=".92">' + p.brand.toUpperCase() + '</text>' +
-    '<text x="160" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="3" fill="#5B6B84">' + short.toUpperCase() + '</text>' +
-    '<path d="M44 148 L276 148 L296 172 Q299 177 292 177 L28 177 Q21 177 24 172 Z" fill="#202B40" stroke="#2C3A52"/>' +
-    keys +
-    '<rect x="140" y="171.5" width="40" height="3.5" rx="1.5" fill="#2A3752"/>' +
-  '</svg>';
+  const B = BRANDS[p.brand] || BRANDS.ASUS;
+  const b = p.brand.toUpperCase();
+  return `<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${p.name}">
+    <ellipse cx="170" cy="196" rx="130" ry="9" fill="#0F172A" opacity=".07"/>
+    <rect x="70" y="16" width="200" height="132" rx="10" fill="#1E293B"/>
+    <rect x="78" y="24" width="184" height="116" rx="5" fill="#F8FAFC"/>
+    <rect x="78" y="24" width="184" height="24" fill="${B.c}"/>
+    <text x="170" y="41" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#fff" letter-spacing="2.5">${b}</text>
+    <rect x="94" y="62" width="72" height="7" rx="3.5" fill="${B.c}" opacity=".85"/>
+    <rect x="94" y="76" width="112" height="5" rx="2.5" fill="#94A3B8"/>
+    <rect x="94" y="86" width="92" height="5" rx="2.5" fill="#CBD5E1"/>
+    <rect x="94" y="96" width="102" height="5" rx="2.5" fill="#CBD5E1"/>
+    <rect x="94" y="114" width="48" height="12" rx="6" fill="${B.c}"/>
+    <rect x="148" y="114" width="48" height="12" rx="6" fill="#E2E8F0"/>
+    <path d="M52 148 L288 148 L303 176 Q305 182 296 182 L44 182 Q35 182 37 176 Z" fill="#475569"/>
+    <rect x="52" y="148" width="236" height="7" fill="#64748B"/>
+    <rect x="66" y="160" width="208" height="12" rx="3" fill="#334155" opacity=".35"/>
+    <rect x="145" y="163" width="50" height="8" rx="3" fill="#0F172A" opacity=".35"/>
+  </svg>`;
+}
+function printerArt(p){
+  const B = BRANDS[p.brand] || BRANDS.Epson;
+  const b = p.brand.toUpperCase();
+  return `<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${p.name}">
+    <ellipse cx="170" cy="198" rx="120" ry="9" fill="#0F172A" opacity=".07"/>
+    <rect x="105" y="34" width="130" height="68" rx="4" fill="#fff" stroke="#CBD5E1"/>
+    <rect x="118" y="46" width="70" height="7" rx="3.5" fill="${B.c}" opacity=".85"/>
+    <rect x="118" y="60" width="104" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="118" y="69" width="88" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="118" y="78" width="96" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="60" y="94" width="220" height="72" rx="14" fill="#334155"/>
+    <rect x="60" y="94" width="220" height="24" rx="12" fill="#475569"/>
+    <rect x="78" y="102" width="70" height="9" rx="4.5" fill="#0F172A" opacity=".35"/>
+    <circle cx="262" cy="106" r="6" fill="#10B981"/>
+    <rect x="88" y="126" width="164" height="6" rx="3" fill="#0F172A" opacity=".35"/>
+    <text x="152" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#fff" letter-spacing="2">${b}</text>
+    <rect x="216" y="130" width="26" height="32" rx="5" fill="#F1F5F9" stroke="#94A3B8"/>
+    <rect x="219" y="141" width="20" height="18" rx="3" fill="${B.c}"/>
+    <rect x="246" y="130" width="26" height="32" rx="5" fill="#F1F5F9" stroke="#94A3B8"/>
+    <rect x="249" y="141" width="20" height="18" rx="3" fill="#EF4444"/>
+    <text x="170" y="186" text-anchor="middle" font-family="Space Grotesk, Arial" font-weight="600" font-size="10.5" fill="#64748B">${p.name}</text>
+  </svg>`;
+}
+const artFor = p => p.type==='printer' ? printerArt(p) : laptopArt(p);
+
+/* ================= UTIL PRODUK ================= */
+const priceText = p => p.priceLabel || (p.price ? rupiah(p.price) : 'Hubungi Kami');
+const tanyaLink = p => waLink(`Halo Liwa Net, saya mau tanya unit *${p.name}* (${priceText(p)}). Masih ready?`);
+function condBar(p){
+  const s = p.cond==='second' ? (p.condScore||88) : 100;
+  const lbl = p.cond==='second' ? (s>=90?'Mulus':'Baik') : 'Baru';
+  return `<div class="cond"><div class="cond-top"><span>Kondisi ${lbl}</span><b>${s}%</b></div><div class="cond-bar"><i style="width:${s}%"></i></div></div>`;
+}
+function badgeStatus(p){
+  return p.status==='limited'
+    ? `<span class="badge b-status st-limited"><i data-lucide="flame"></i>Stok Terbatas</span>`
+    : `<span class="badge b-status st-ready"><i data-lucide="check"></i>Ready</span>`;
+}
+function badgeLeft(p){
+  if(p.type==='printer') return `<span class="badge b-new"><i data-lucide="printer"></i>Pricelist</span>`;
+  return p.cond==='second'
+    ? `<span class="badge b-second"><i data-lucide="recycle"></i>Second</span>`
+    : `<span class="badge b-new"><i data-lucide="sparkles"></i>Baru</span>`;
 }
 
-/* ============ KATALOG: FILTER + SEARCH + RENDER ============ */
-const state = { cat:'semua', min:0, max:Infinity, q:'' };
-const grid = $('#grid');
+/* ================= GRID KATALOG ================= */
+const state = {cat:'semua', min:0, max:Infinity, q:''};
+const cmp = new Map();
 
 function filtered(){
-  return PRODUCTS.filter(p => {
-    if(state.cat !== 'semua' && !p.tags.includes(state.cat)) return false;
-    if(p.price < state.min || p.price > state.max) return false;
+  return PRODUCTS.filter(p=>{
+    if(state.cat!=='semua' && !p.cat.includes(state.cat)) return false;
+    const pr = p.price ?? p.priceEst ?? 0;
+    if(!(pr >= state.min && (state.max===Infinity || pr < state.max))) return false;
     if(state.q){
-      const hay = (p.name + ' ' + p.brand + ' ' + p.cpu + ' ' + p.gpu).toLowerCase();
+      const hay = (p.name+' '+p.brand+' '+p.cpu+' '+(p.storage||'')+' '+(p.fungsi||'')).toLowerCase();
       if(!hay.includes(state.q)) return false;
     }
     return true;
   });
 }
 
-function statusBadge(p){
-  const m = STATUS_META[p.status];
-  return '<span class="badge b-status ' + m.cls + '">' + m.label + '</span>';
+function cardHTML(p){
+  const chips = p.type==='printer'
+    ? [p.fungsi,'Garansi Resmi','Tanki Hemat']
+    : [p.ram, p.storage, p.screen];
+  return `<article class="p-card">
+    <div class="p-art" data-open="${p.id}">${artFor(p)}${badgeLeft(p)}${badgeStatus(p)}</div>
+    <div class="p-body">
+      <div class="p-tags">
+        <span class="p-tag">${p.brand} · ${p.type==='printer'?'PRINTER':(p.cond==='second'?'LAPTOP SECOND':'LAPTOP BARU')}</span>
+        <button class="p-cmp ${cmp.has(p.id)?'active':''}" data-cmp="${p.id}" title="Bandingkan" aria-label="Bandingkan"><i data-lucide="scale"></i></button>
+      </div>
+      <h3 data-open="${p.id}" style="cursor:pointer">${p.name}</h3>
+      <p class="p-cpu">${p.cpu}</p>
+      <ul class="p-specs">${chips.map(c=>`<li>${c}</li>`).join('')}</ul>
+      ${p.cond ? condBar(p) : ''}
+      <div class="p-foot">
+        <span class="p-price">${priceText(p)}</span>
+        <div class="p-actions">
+          <button class="btn-detail" data-open="${p.id}">Detail</button>
+          <a class="btn-tanya" href="${tanyaLink(p)}" target="_blank" rel="noopener" aria-label="Tanya ${p.name}"><i data-lucide="message-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </article>`;
 }
 
 function renderGrid(){
   const list = filtered();
-  $('#resultMeta').innerHTML = 'Menampilkan <b>' + list.length + '</b> dari ' + PRODUCTS.length + ' unit laptop';
-  if(!list.length){
-    grid.innerHTML = '<div class="empty"><i data-lucide="search-x"></i>' +
-      '<h3>Tidak ada laptop yang cocok</h3><p>Coba ubah kata kunci atau filter-nya.</p></div>';
-    icons(); return;
-  }
-  grid.innerHTML = list.map((p, i) => {
-    const cond = p.cond ? '<div class="cond"><div class="cond-top"><span>Kondisi</span><b>' + p.cond + '% · ' + p.condLabel + '</b></div><div class="cond-bar"><i style="width:' + p.cond + '%"></i></div></div>' : '';
-    const tag = p.tags.includes('second') ? 'Second' : p.tags.includes('gaming') ? 'Gaming' : p.tags.includes('pelajar') ? 'Pelajar' : 'Baru';
-    return '<article class="p-card' + (p.status === 'sold' ? ' is-sold' : '') + '" style="animation-delay:' + (i * 45) + 'ms">' +
-      '<div class="p-art">' + laptopArt(p) +
-        (p.tags.includes('second') ? '<span class="badge b-second"><i data-lucide="recycle"></i>Second</span>' : '') +
-        statusBadge(p) +
-        (p.status === 'sold' ? '<div class="sold-tag">Terjual</div>' : '') +
-      '</div>' +
-      '<div class="p-body">' +
-        '<div class="p-tags"><span class="p-tag">' + tag + '</span>' +
-          '<button class="p-cmp' + (compare.includes(p.id) ? ' active' : '') + '" data-cmp="' + p.id + '"><i data-lucide="git-compare"></i>Bandingkan</button>' +
-        '</div>' +
-        '<h3>' + p.name + '</h3>' +
-        '<p class="p-cpu">' + p.cpu + '</p>' +
-        '<ul class="p-specs"><li>' + p.ram + '</li><li>' + p.storage + '</li><li>' + p.display.split(' ')[0] + '</li></ul>' +
-        cond +
-        '<div class="p-foot">' +
-          '<span class="p-price">' + fmtRp(p.price) + '</span>' +
-          '<div class="p-actions">' +
-            '<button class="btn-detail" data-detail="' + p.id + '">Detail</button>' +
-            '<a class="btn-tanya" target="_blank" rel="noopener" aria-label="Tanya via WhatsApp" href="' +
-              waLink(p.status === 'sold'
-                ? 'Halo Liwa Net, saya lihat ' + p.name + ' sudah sold out. Apakah ada stok berikutnya?'
-                : 'Halo Liwa Net, saya tertarik dengan ' + p.name + ' dengan harga ' + fmtRp(p.price) + '. Apakah masih tersedia?') +
-            '"><i data-lucide="message-circle"></i></a>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-    '</article>';
-  }).join('');
+  $('#grid').innerHTML = list.length
+    ? list.map(cardHTML).join('')
+    : `<div class="empty"><i data-lucide="search-x"></i><h3>Tidak ada yang cocok</h3><p>Coba ubah filter atau kata kunci pencarian.</p></div>`;
+  $('#resultMeta').innerHTML = `Menampilkan <b>${list.length} unit</b> · <span>*Harga dapat berubah sewaktu-waktu — chat kami untuk stok &amp; harga terbaru.</span>`;
   icons();
 }
 
-function setCat(cat){
+function setCat(cat, scroll=true){
   state.cat = cat;
-  $$('#catChips .fchip').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+  $$('#catChips .fchip').forEach(b=>b.classList.toggle('active', b.dataset.cat===cat));
   renderGrid();
+  if(scroll) document.getElementById('laptop').scrollIntoView({behavior:'smooth'});
 }
- $('#catChips').addEventListener('click', e => {
-  const b = e.target.closest('.fchip'); if(b) setCat(b.dataset.cat);
-});
- $('#budgetChips').addEventListener('click', e => {
-  const b = e.target.closest('.fchip'); if(!b) return;
-  state.min = +b.dataset.min; state.max = +b.dataset.max;
-  $$('#budgetChips .fchip').forEach(x => x.classList.toggle('active', x === b));
-  renderGrid();
-});
- $('#searchInput').addEventListener('input', e => {
-  state.q = e.target.value.trim().toLowerCase();
-  renderGrid();
-});
 
-/* ============ DETAIL PRODUK (MODAL) ============ */
-let currentProduct = null;
-function openProduct(id){
-  const p = PRODUCTS.find(x => x.id === id); if(!p) return;
-  currentProduct = id;
-  const m = STATUS_META[p.status];
-  const specs = [
-    ['CPU', p.cpu], ['GPU', p.gpu], ['RAM', p.ram], ['Storage', p.storage],
-    ['Display', p.display], ['OS', p.os],
-    p.cond ? ['Kondisi', p.cond + '% — ' + p.condLabel] : ['Status', m.label]
-  ];
-  const waMsg = p.status === 'sold'
-    ? 'Halo Liwa Net, saya tertarik dengan ' + p.name + ' (' + fmtRp(p.price) + '). Apakah ada stok berikutnya?'
-    : 'Halo Liwa Net, saya tertarik dengan ' + p.name + ' dengan harga ' + fmtRp(p.price) + '. Apakah masih tersedia?';
-  $('#pmPanel').innerHTML =
-    '<button class="m-close" data-close aria-label="Tutup"><i data-lucide="x"></i></button>' +
-    '<div class="pm-grid">' +
-      '<div class="pm-art">' + laptopArt(p) +
-        (p.tags.includes('second') ? '<span class="badge b-second"><i data-lucide="recycle"></i>Second</span>' : '') +
-        statusBadge(p) +
-      '</div>' +
-      '<div class="pm-info">' +
-        '<div class="pm-tagrow">' +
-          (p.tags.includes('second')
-            ? '<span class="tag st-ready"><i data-lucide="recycle"></i>Laptop Second</span>'
-            : '<span class="tag st-limited"><i data-lucide="sparkles"></i>Laptop Baru</span>') +
-          '<span class="tag ' + m.cls + '"><i data-lucide="circle"></i>' + m.label + '</span>' +
-        '</div>' +
-        '<h2>' + p.name + '</h2>' +
-        '<p class="pm-desc">' + p.desc + '</p>' +
-        '<div class="pm-price">' + fmtRp(p.price) + '</div>' +
-        (p.cond ? '<div class="pm-cond"><div class="cond-top"><span>Hasil pengecekan kondisi</span><b>' + p.cond + '% · ' + p.condLabel + '</b></div><div class="cond-bar"><i style="width:' + p.cond + '%"></i></div></div>' : '') +
-        '<div class="pm-sec"><h4>Spesifikasi</h4><dl class="spec-table">' +
-          specs.map(s => '<div class="spec-row"><dt>' + s[0] + '</dt><dd>' + s[1] + '</dd></div>').join('') +
-        '</dl></div>' +
-        (p.cond ? '<div class="pm-sec"><h4>10 Titik Pengecekan</h4><ul class="pm-checks">' +
-          CHECKS.map(c => '<li><i data-lucide="check"></i>' + c + '</li>').join('') + '</ul></div>' : '') +
-        '<div class="pm-btns">' +
-          '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(waMsg) + '"><i data-lucide="message-circle"></i> Tanya Produk via WhatsApp</a>' +
-          '<button class="btn btn-ghost" data-detail-back="1">Tambah ke Perbandingan</button>' +
-        '</div>' +
-        '<div class="pm-guarantee"><i data-lucide="shield-check"></i>' +
-          (p.tags.includes('second')
-            ? 'Garansi tukar 3 hari untuk unit second · bebas tes dulu di toko'
-            : 'Garansi resmi 1 tahun · free pemasangan dasar aplikasi') +
-        '</div>' +
-      '</div>' +
-    '</div>';
-  $('#pm').classList.add('open'); lockBody(true); icons();
-}
-grid.addEventListener('click', e => {
-  const d = e.target.closest('[data-detail]');  if(d) return openProduct(+d.dataset.detail);
-  const c = e.target.closest('[data-cmp]');     if(c) return toggleCompare(+c.dataset.cmp);
+ $$('#catChips .fchip').forEach(b=>b.onclick=()=>setCat(b.dataset.cat,false));
+ $$('#budgetChips .fchip').forEach(b=>b.onclick=()=>{
+  $$('#budgetChips .fchip').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  state.min = parseFloat(b.dataset.min);
+  state.max = parseFloat(b.dataset.max);
+  renderGrid();
 });
- $('#featCard').addEventListener('click', () => openProduct(9));
- $('#pmPanel').addEventListener('click', e => {
-  if(e.target.closest('[data-close]')) return closeModal();
-  if(e.target.closest('[data-detail-back]')){ const id = currentProduct; closeModal(); if(id) toggleCompare(id); }
-});
-function closeModal(){ $$('.modal').forEach(m => m.classList.remove('open')); lockBody(false); }
- $$('.modal .m-overlay').forEach(o => o.addEventListener('click', closeModal));
-document.addEventListener('keydown', e => { if(e.key === 'Escape'){ closeModal(); $('#mMenu').classList.remove('open'); } });
+ $('#searchInput').addEventListener('input', e=>{ state.q = e.target.value.trim().toLowerCase(); renderGrid(); });
 
-/* ============ COMPARE ============ */
-const compare = [];
-function toggleCompare(id){
-  const i = compare.indexOf(id);
-  if(i > -1){ compare.splice(i, 1); toast('Dihapus dari perbandingan', 'info'); }
-  else {
-    if(compare.length >= 3) return toast('Maksimal 3 laptop untuk perbandingan', 'bad');
-    compare.push(id); toast('Ditambahkan ke perbandingan');
-  }
-  updateTray(); renderGrid();
-}
-function updateTray(){
+/* ================= BANDINGKAN ================= */
+function renderTray(){
   const tray = $('#cmpTray');
-  tray.classList.toggle('show', compare.length > 0);
-  $('#cmpGo').disabled = compare.length < 2;
-  $('#cmpGo').style.opacity = compare.length < 2 ? .55 : 1;
-  $('#cmpItems').innerHTML = compare.map(id => {
-    const p = PRODUCTS.find(x => x.id === id);
-    return '<span class="cmp-item">' + p.name.split(' ').slice(0,2).join(' ') +
-      '<button data-rm="' + id + '" aria-label="Hapus"><i data-lucide="x"></i></button></span>';
-  }).join('');
+  if(!cmp.size){ tray.classList.remove('show'); return; }
+  $('#cmpItems').innerHTML = [...cmp.values()].map(p=>
+    `<span class="cmp-item">${p.name.split(' ').slice(0,3).join(' ')}<button data-uncmp="${p.id}" aria-label="Hapus"><i data-lucide="x"></i></button></span>`
+  ).join('');
+  tray.classList.add('show');
   icons();
 }
- $('#cmpItems').addEventListener('click', e => {
-  const b = e.target.closest('[data-rm]'); if(b) toggleCompare(+b.dataset.rm);
-});
- $('#cmpClear').addEventListener('click', () => { compare.length = 0; updateTray(); renderGrid(); });
- $('#cmpGo').addEventListener('click', () => { if(compare.length >= 2) openCompare(); });
-
-function parseGb(s){ const m = s.match(/(\d+)\s*GB/i); return m ? +m[1] : 0; }
-function openCompare(){
-  const items = compare.map(id => PRODUCTS.find(x => x.id === id));
-  const minPrice = Math.min(...items.map(p => p.price));
-  const maxRam = Math.max(...items.map(p => parseGb(p.ram)));
-  const maxSt = Math.max(...items.map(p => parseGb(p.storage)));
-  const row = (label, cells) => '<tr><th>' + label + '</th>' + cells.map(c => '<td>' + c + '</td>').join('') + '</tr>';
-  const cl = (v, best, cls) => v === best ? ' class="' + cls + '"' : '';
-  $('#cmBody').innerHTML = '<table class="cmp-table"><thead><tr><th>Model</th>' +
-    items.map(p => '<td><b>' + p.name + '</b><br><small style="color:var(--dim)">' + (p.cond ? p.cond + '% · ' + p.condLabel : 'Unit Baru') + '</small></td>').join('') +
-    '</tr></thead><tbody>' +
-    row('Harga', items.map(p => '<span' + cl(p.price, minPrice, 'best-ok') + '>' + fmtRp(p.price) + '</span>')) +
-    row('CPU', items.map(p => p.cpu)) +
-    row('GPU', items.map(p => p.gpu)) +
-    row('RAM', items.map(p => '<span' + cl(parseGb(p.ram), maxRam, 'best-top') + '>' + p.ram + '</span>')) +
-    row('Storage', items.map(p => '<span' + cl(parseGb(p.storage), maxSt, 'best-top') + '>' + p.storage + '</span>')) +
-    row('Display', items.map(p => p.display)) +
-    row('OS', items.map(p => p.os)) +
-    row('Status', items.map(p => STATUS_META[p.status].label)) +
-    row('Tanya', items.map(p => '<a class="btn-tanya" style="display:inline-grid" target="_blank" rel="noopener" href="' +
-      waLink('Halo Liwa Net, saya tertarik dengan ' + p.name + ' dengan harga ' + fmtRp(p.price) + '. Apakah masih tersedia?') +
-      '"><i data-lucide="message-circle"></i></a>')) +
-    '</tbody></table>';
-  $('#cm').classList.add('open'); lockBody(true); icons();
-}
-
-/* ============ BOOKING SERVICE ============ */
-const phoneOk = v => /^(\+?62|0)8\d{7,12}$/.test(v.replace(/[\s-]/g, ''));
-function fieldErr(el, bad){ el.closest('.field').classList.toggle('err', bad); return bad; }
- $('#bookingForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const nama = $('#bkNama'), wa = $('#bkWa'), kel = $('#bkKeluhan');
-  let bad = false;
-  bad = fieldErr(nama, !nama.value.trim()) || bad;
-  bad = fieldErr(wa, !phoneOk(wa.value)) || bad;
-  bad = fieldErr(kel, kel.value.trim().length < 10) || bad;
-  if(bad) return toast('Lengkapi form yang ditandai merah', 'bad');
-  const jenis = $('#bkJenis').value, merk = $('#bkMerk').value.trim(), model = $('#bkModel').value.trim();
-  const device = [jenis, merk, model].filter(Boolean).join(' ');
-  const msg = 'Halo Liwa Net, saya ingin booking service.\n\n' +
-    'Nama: ' + nama.value.trim() + '\n' +
-    'No. WA: ' + wa.value.trim() + '\n' +
-    'Perangkat: ' + device + '\n' +
-    'Keluhan: ' + kel.value.trim();
-  window.open(waLink(msg), '_blank');
-  const ok = $('#bkSuccess');
-  ok.innerHTML = '<h4><i data-lucide="check-circle"></i> Permintaan terkirim!</h4>' +
-    '<p>Kami akan segera menghubungimu via WhatsApp untuk konfirmasi jadwal. WhatsApp kami aktif <b style="color:var(--text)">24 jam</b> — jangan ragu chat kapan saja.</p>';
-  ok.classList.add('show'); icons();
-  toast('Mengarahkan ke WhatsApp…', 'info');
-  e.target.reset();
-});
-
-/* ============ ULASAN SLIDER ============ */
-const REVIEWS = [
-  {name:'Jawan', role:'Beli Laptop Second', text:'Pelayanannya ramah dan laptopnya sesuai dengan yang dijelaskan. Diberi waktu cek dulu sebelum bayar — jadi tenang.', stars:5},
-  {name:'Siti Rahma', role:'Service Laptop', text:'Laptop cepat panas langsung diperbaiki dalam sehari. Thermal paste diganti, sekarang adem lagi. Recommended!', stars:5},
-  {name:'Andi Pratama', role:'Beli Laptop Baru', text:'Dibantu pilih laptop sesuai budget kuliah, tidak dipaksa yang mahal. Garansinya jelas dan purna jualnya responsif.', stars:5},
-  {name:'Pak Hermansyah', role:'Service Printer', text:'Printer Epson saya hasil cetaknya bergaris. Ternyata headnya cuma perlu dibersihkan — langsung normal, harga wajar.', stars:4},
-  {name:'Dedi Kurniawan', role:'Jual Laptop Bekas', text:'Jual laptop lama ke Liwa Net, harganya masuk akal dan prosesnya cepat. Bayar tunai di tempat, tidak ribet.', stars:5}
-];
-let tIdx = 0, tTimer;
-function starRow(n){
-  return Array.from({length:5}, (_, i) => '<i data-lucide="star"' + (i < n ? ' style="opacity:1"' : ' style="opacity:.22"') + '></i>').join('');
-}
-function renderReviews(){
-  $('#tTrack').innerHTML = REVIEWS.map((r, i) => {
-    const init = r.name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
-    return '<div class="t-slide' + (i === 0 ? ' active' : '') + '">' +
-      '<div class="t-quote-ico"><i data-lucide="quote"></i></div>' +
-      '<div class="t-stars">' + starRow(r.stars) + '</div>' +
-      '<blockquote>"' + r.text + '"</blockquote>' +
-      '<div class="t-who"><span class="t-ava">' + init + '</span><div><b>' + r.name + '</b><span>' + r.role + ' · Pelanggan Liwa Net</span></div></div>' +
-    '</div>';
-  }).join('');
-  $('#tDots').innerHTML = REVIEWS.map((_, i) =>
-    '<button class="t-dot' + (i === 0 ? ' active' : '') + '" data-t="' + i + '" aria-label="Ulasan ' + (i+1) + '"></button>').join('');
-  icons(); setSlide(0, false);
-}
-function setSlide(i, scroll = true){
-  tIdx = (i + REVIEWS.length) % REVIEWS.length;
-  $$('#tTrack .t-slide').forEach((s, k) => s.classList.toggle('active', k === tIdx));
-  $$('#tDots .t-dot').forEach((d, k) => d.classList.toggle('active', k === tIdx));
-  const active = $('#tTrack .t-slide.active');
-  if(active) $('#tTrack').style.height = active.offsetHeight + 'px';
-  if(scroll) restartAuto();
-}
-function restartAuto(){ clearInterval(tTimer); tTimer = setInterval(() => setSlide(tIdx + 1, false), 6500); }
- $('#tPrev').addEventListener('click', () => setSlide(tIdx - 1));
- $('#tNext').addEventListener('click', () => setSlide(tIdx + 1));
- $('#tDots').addEventListener('click', e => {
-  const d = e.target.closest('[data-t]'); if(d) setSlide(+d.dataset.t);
-});
- $('.t-wrap').addEventListener('mouseenter', () => clearInterval(tTimer));
- $('.t-wrap').addEventListener('mouseleave', restartAuto);
-window.addEventListener('resize', () => setSlide(tIdx, false));
-
-/* ============ NAV: SCROLL, SPY, MENU MOBILE ============ */
-const nav = $('#nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 10);
-  let cur = 'beranda';
-  for(const id of ['beranda','laptop','service','tentang','lokasi']){
-    const el = document.getElementById(id);
-    if(el && el.getBoundingClientRect().top <= 120) cur = id;
+function toggleCmp(id){
+  const p = PRODUCTS.find(x=>x.id===id); if(!p) return;
+  if(cmp.has(id)) cmp.delete(id);
+  else{
+    if(cmp.size>=3){ toast('Maksimal 3 unit untuk perbandingan','info'); return; }
+    cmp.set(id,p); toast('Ditambahkan ke perbandingan','ok');
   }
-  $$('.nav-link').forEach(a => a.classList.toggle('active', a.dataset.spy === cur));
+  renderTray();
+  $$('[data-cmp]').forEach(b=>b.classList.toggle('active', cmp.has(b.dataset.cmp)));
+}
+function openCompare(){
+  const items = [...cmp.values()];
+  if(items.length<2){ toast('Pilih minimal 2 unit dulu ya','info'); return; }
+  const rows = [
+    ['Harga', p=>priceText(p)],
+    ['Processor', p=>p.cpu||'-'],
+    ['RAM', p=>p.ram||'-'],
+    ['Storage', p=>p.storage||'-'],
+    ['Layar', p=>p.screen||'-'],
+    ['Grafis', p=>p.gpu||'-'],
+    ['OS', p=>p.os||'-'],
+    ['Kondisi', p=>p.cond==='second'?((p.condScore||88)+'% — Second'):(p.type==='printer'?'—':'Baru')],
+    ['Status', p=>p.status==='limited'?'Stok Terbatas':'Ready']
+  ];
+  $('#cmpBody').innerHTML = `<table class="cmp-table">
+    <thead><tr><th></th>${items.map(p=>`<th>${p.name}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(([k,f])=>`<tr><th>${k}</th>${items.map(p=>`<td>${f(p)}</td>`).join('')}</tr>`).join('')}</tbody>
+  </table>`;
+  openModal($('#cmpModal'));
+}
+ $('#cmpOpen').onclick = openCompare;
+ $('#cmpClear').onclick = ()=>{ cmp.clear(); renderTray(); $$('[data-cmp]').forEach(b=>b.classList.remove('active')); };
+
+/* ================= MODAL ================= */
+function openModal(m){ m.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModals(){ $$('.modal.open').forEach(m=>m.classList.remove('open')); document.body.style.overflow=''; }
+
+function buildSpecs(p){
+  const s = {};
+  if(p.type==='printer'){
+    s['Brand']=p.brand; s['Fungsi']=p.fungsi; s['Detail']=p.detail;
+    s['Harga']='Sesuai pricelist — dapat berubah';
+    return s;
+  }
+  s['Processor']=p.cpu;
+  if(p.gpu) s['Grafis']=p.gpu;
+  s['RAM']=p.ram; s['Storage']=p.storage; s['Layar']=p.screen;
+  if(p.os) s['Sistem Operasi']=p.os;
+  if(p.keyboard) s['Keyboard']=p.keyboard;
+  if(p.extra) s['Bonus']=p.extra;
+  return s;
+}
+
+function openProduct(id){
+  const p = PRODUCTS.find(x=>x.id===id); if(!p) return;
+  $('#pmArt').innerHTML = artFor(p) + badgeLeft(p) + badgeStatus(p);
+  const tags = p.type==='printer'
+    ? `<span class="tag new"><i data-lucide="printer"></i>Printer</span>`
+    : (p.cond==='second'
+        ? `<span class="tag sec"><i data-lucide="recycle"></i>Laptop Second</span>`
+        : `<span class="tag new"><i data-lucide="sparkles"></i>Laptop Baru</span>`);
+  const tagBrand = `<span class="tag brand"><i data-lucide="tag"></i>${p.brand}</span>`;
+  const tagStatus = p.status==='limited'
+    ? `<span class="tag ltd"><i data-lucide="flame"></i>Stok Terbatas</span>` : '';
+  const checks = p.checks || (p.cond==='second' ? CHECKS10.map(c=>c[1]) : null);
+  const priceNote = p.type==='printer'
+    ? `<div class="pm-guarantee"><i data-lucide="info"></i> Harga sesuai pricelist resmi — dapat berubah sewaktu-waktu.</div>`
+    : (p.cond==='second'
+        ? `<div class="pm-guarantee"><i data-lucide="shield-check"></i> Garansi toko 1 bulan · bisa cek &amp; dites langsung di toko.</div>`
+        : `<div class="pm-guarantee"><i data-lucide="shield-check"></i> Garansi resmi · bisa dicek &amp; dites langsung di toko.</div>`);
+  $('#pmInfo').innerHTML = `
+    <div class="pm-tagrow">${tags}${tagBrand}${tagStatus}</div>
+    <h2>${p.name}</h2>
+    <p class="pm-desc">${p.desc}</p>
+    <div class="pm-price">${priceText(p)}</div>
+    ${p.cond ? `<div class="pm-cond">${condBar(p)}</div>` : ''}
+    ${p.note ? `<div class="feat-note" style="margin:0 0 6px"><i data-lucide="battery-charging"></i><span>${p.note}</span></div>` : ''}
+    <div class="pm-sec"><h4>Spesifikasi</h4>
+      <dl class="spec-table">${Object.entries(buildSpecs(p)).map(([k,v])=>`<div class="spec-row"><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+    </div>
+    ${checks ? `<div class="pm-sec"><h4>Hasil Cek 10 Titik</h4><ul class="pm-checks">${checks.map(c=>`<li><i data-lucide="check"></i>${c}</li>`).join('')}</ul></div>` : ''}
+    ${p.kelengkapan ? `<div class="pm-sec"><h4>Kelengkapan</h4><ul class="pm-checks">${p.kelengkapan.map(c=>`<li><i data-lucide="package"></i>${c}</li>`).join('')}</ul></div>` : ''}
+    <div class="pm-btns">
+      <a class="btn btn-wa" href="${tanyaLink(p)}" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Tanya / Booking Unit Ini</a>
+    </div>
+    ${priceNote}`;
+  openModal($('#pModal'));
+  icons();
+}
+
+/* ================= DELEgASI KLIK ================= */
+document.addEventListener('click', e=>{
+  if(e.target.closest('[data-close]')){ closeModals(); return; }
+  const open = e.target.closest('[data-open]');
+  if(open){ openProduct(open.dataset.open); return; }
+  const c = e.target.closest('[data-cmp]');
+  if(c){ toggleCmp(c.dataset.cmp); return; }
+  const u = e.target.closest('[data-uncmp]');
+  if(u){ cmp.delete(u.dataset.uncmp); renderTray(); return; }
+  const gc = e.target.closest('[data-goto-cat]');
+  if(gc){ setCat(gc.dataset.gotoCat); return; }
+  const gs = e.target.closest('[data-goto-service]');
+  if(gs){
+    const t = gs.dataset.gotoService;
+    $('#bkJenis').value = t==='Printer' ? 'Service Printer' : (t==='CCTV' ? 'Pemasangan CCTV' : 'Service Laptop');
+    document.getElementById('service').scrollIntoView({behavior:'smooth'});
+    return;
+  }
+  const dot = e.target.closest('[data-dot]');
+  if(dot){ tIdx = +dot.dataset.dot; renderT(); }
+});
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModals(); });
+
+/* ================= TOAST ================= */
+function toast(msg, type='ok'){
+  const t = document.createElement('div');
+  t.className = 'toast '+type;
+  const ic = type==='ok' ? 'check' : (type==='bad' ? 'x' : 'info');
+  t.innerHTML = `<i data-lucide="${ic}"></i>${msg}`;
+  $('#toasts').appendChild(t); icons();
+  setTimeout(()=>{ t.classList.add('out'); setTimeout(()=>t.remove(),300); }, 2600);
+}
+
+/* ================= SECTION SECOND ================= */
+function renderChecks(){
+  $('#checkGrid').innerHTML = CHECKS10.map(([ic,l])=>
+    `<div class="check-item"><i data-lucide="${ic}"></i>${l}</div>`).join('');
+}
+function renderFeat(){
+  const p = PRODUCTS.find(x=>x.id==='advan-second');
+  $('#featCard').innerHTML = `
+    <div class="p-art">
+      ${artFor(p)}
+      <span class="badge b-second"><i data-lucide="recycle"></i>Second</span>
+      <span class="badge b-status st-limited"><i data-lucide="flame"></i>Stok Terbatas</span>
+    </div>
+    <div class="feat-body">
+      <div class="feat-top"><span class="p-tag">Menu Spesial Bulan Ini</span><span class="p-price">${p.priceLabel}</span></div>
+      <h3 style="font-size:19px">${p.name}</h3>
+      <p class="p-cpu">${p.cpu}</p>
+      <ul class="p-specs">
+        <li>${p.ram}</li><li>${p.storage}</li><li>${p.screen}</li>
+        <li>Windows 10 Home</li><li>Intel UHD 600</li><li>Chiclet Keyboard</li>
+      </ul>
+      <div class="feat-note"><i data-lucide="battery-charging"></i><span>Mines baterai: harus selalu nempel charger saat dipakai. Di luar itu normal — makanya harganya cuma <b>satu jutaan</b>!</span></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;margin-top:14px;font-size:12.5px;color:var(--muted)">
+        <i data-lucide="shield-check" style="width:15px;height:15px;color:var(--ok);margin-top:2px"></i>
+        Garansi toko 1 bulan · Kelengkapan: charger original, mouse USB, alas mouse
+      </div>
+    </div>`;
+  $('#featCard').addEventListener('click', ()=>openProduct('advan-second'));
+}
+
+/* ================= BOOKING FORM ================= */
+ $('#bkForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const f = e.target;
+  const nama = f.bkNama.value.trim(), wa = f.bkWa.value.trim(), jenis = f.bkJenis.value, ket = f.bkKet.value.trim();
+  let err = false;
+  const mark = (id, bad)=>{ document.getElementById(id).closest('.field').classList.toggle('err', bad); if(bad) err = true; };
+  mark('bkNama', !nama);
+  mark('bkWa', !/^[+0-9][0-9\- ]{8,}$/.test(wa));
+  mark('bkKet', !ket);
+  if(err){ toast('Lengkapi dulu form yang ditandai merah ya','bad'); return; }
+  const msg = `Halo Liwa Net! Saya ${nama} (${wa}).\n\nBooking: *${jenis}*\nKeluhan / Kebutuhan: ${ket}\n\nMohon info estimasi biaya & jadwalnya. Terima kasih!`;
+  window.open(waLink(msg), '_blank');
+  $('#bkSuccess').classList.add('show');
+  toast('Booking disiapkan di WhatsApp — tinggal tekan kirim!','ok');
+  f.reset();
+});
+
+/* ================= ULASAN SLIDER ================= */
+let tIdx = 0;
+function renderT(){
+  $('#tTrack').innerHTML = REVIEWS.map((r,i)=>`
+    <div class="t-slide ${i===tIdx?'active':''}">
+      <i data-lucide="quote" class="t-quote-ico"></i>
+      <div class="t-stars">${'<i data-lucide="star"></i>'.repeat(5)}</div>
+      <blockquote>“${r.t}”</blockquote>
+      <div class="t-who"><span class="t-ava">${r.i}</span><div><b>${r.n}</b><span>${r.r}</span></div></div>
+    </div>`).join('');
+  $$('#tDots .t-dot').forEach((d,i)=>d.classList.toggle('active', i===tIdx));
+  icons();
+}
+ $('#tDots').innerHTML = REVIEWS.map((_,i)=>`<button class="t-dot" data-dot="${i}" aria-label="Ulasan ${i+1}"></button>`).join('');
+ $('#tPrev').onclick = ()=>{ tIdx = (tIdx-1+REVIEWS.length)%REVIEWS.length; renderT(); };
+ $('#tNext').onclick = ()=>{ tIdx = (tIdx+1)%REVIEWS.length; renderT(); };
+setInterval(()=>{ tIdx = (tIdx+1)%REVIEWS.length; renderT(); }, 7000);
+
+/* ================= MISC UI ================= */
+(function initWA(){
+  const hi = waLink('Halo Liwa Net! Saya mau tanya-tanya soal laptop / printer 😊');
+  $$('.js-wa').forEach(a=>a.href = hi);
+  $$('.navWa2').forEach(a=>a.href = hi);
+})();
+
+ $('#marqTrack').innerHTML = ['ACER','ASUS','LENOVO','HP','DELL','ADVAN','EPSON','CANON']
+  .concat(['ACER','ASUS','LENOVO','HP','DELL','ADVAN','EPSON','CANON'])
+  .map(b=>`<span>${b}</span>`).join('');
+
+ $('#heroStars').innerHTML = '<i data-lucide="star"></i>'.repeat(5);
+
+ $('#burger').onclick = ()=> $('#mMenu').classList.toggle('open');
+ $$('#mMenu a').forEach(a=> a.addEventListener('click', ()=> $('#mMenu').classList.remove('open')));
+
+/* Scroll spy + nav */
+const spyIds = ['beranda','laptop','service','tentang','lokasi'];
+window.addEventListener('scroll', ()=>{
+  $('#nav').classList.toggle('scrolled', scrollY>10);
+  let cur = 'beranda';
+  spyIds.forEach(id=>{
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= 100) cur = id;
+  });
+  $$('.nav-link').forEach(a=>a.classList.toggle('active', a.dataset.spy===cur));
 }, {passive:true});
- $('#burger').addEventListener('click', () => {
-  const m = $('#mMenu'); m.classList.toggle('open');
-  $('#burger').innerHTML = '<i data-lucide="' + (m.classList.contains('open') ? 'x' : 'menu') + '"></i>'; icons();
-});
- $$('#mMenu a').forEach(a => a.addEventListener('click', () => {
-  $('#mMenu').classList.remove('open');
-  $('#burger').innerHTML = '<i data-lucide="menu"></i>'; icons();
-}));
 
-/* Shortcut kategori dari semua elemen data-goto-cat / data-goto-service */
-document.addEventListener('click', e => {
-  const c = e.target.closest('[data-goto-cat]');
-  if(c){ setCat(c.dataset.gotoCat); return; }
-  const s = e.target.closest('[data-goto-service]');
-  if(s){ $('#bkJenis').value = s.dataset.gotoService; }
-});
-
-/* ============ REVEAL ON SCROLL ============ */
-const io = new IntersectionObserver(es => es.forEach(en => {
+/* Reveal on scroll */
+const io = new IntersectionObserver(es=>es.forEach(en=>{
   if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
 }), {threshold:.12});
- $$('.rv').forEach(el => io.observe(el));
+ $$('.rv').forEach(el=>io.observe(el));
 
-/* ============ COUNT-UP STATISTIK ============ */
-const ioStat = new IntersectionObserver(es => es.forEach(en => {
-  if(!en.isIntersecting) return;
-  ioStat.unobserve(en.target);
-  const el = en.target, t = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), sfx = el.dataset.suffix || '';
-  const st = performance.now(), dur = 1400;
-  (function tick(n){
-    const p = Math.min(1, (n - st) / dur), e = 1 - Math.pow(1 - p, 3), v = t * e;
-    el.textContent = (dec ? v.toFixed(dec) : Math.round(v)) + sfx;
-    if(p < 1) requestAnimationFrame(tick);
-  })(st);
-}), {threshold:.5});
- $$('.stat b[data-count]').forEach(el => ioStat.observe(el));
-
-/* ============ MARQUEE BRAND ============ */
-(function marquee(){
-  const brands = ['ASUS','Lenovo','HP','Dell','Acer','Epson','Canon','Hikvision','Dahua'];
-  const row = brands.map(b => '<span>' + b + '</span>').join('');
-  $('#marqTrack').innerHTML = row + row;
-})();
-
-/* ============ LINK & INISIALISASI ============ */
-const waHi = waLink('Halo Liwa Net, saya mau tanya-tanya dulu soal laptop / printer / service.');
-['navWa','fabWa','btnWa1','btnWaSvc'].forEach(id => { const el = document.getElementById(id); if(el) el.href = waHi; });
- $$('.navWa2').forEach(a => a.href = waHi);
-const waTrade = waLink('Halo Liwa Net, saya ingin jual / trade-up laptop bekas saya. Boleh tanya estimasi harga?');
-const elTrade = document.getElementById('btnWaTrade'); if(elTrade) elTrade.href = waTrade;
-['btnReview','btnReview2','btnReview3'].forEach(id => { const el = document.getElementById(id); if(el) el.href = REVIEW_URL; });
-['btnMaps1'].forEach(id => { const el = document.getElementById(id); if(el) el.href = GMAPS_URL; });
- $('#heroStars').innerHTML = '<i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>';
-
-/* Checklist second section */
- $('#checkGrid').innerHTML = CHECKS.map(c =>
-  '<div class="check-item"><i data-lucide="check"></i>' + c + '</div>').join('');
-
-/* Kartu second unggulan */
-(function featured(){
-  const p = PRODUCTS.find(x => x.id === 9);
-  $('#featCard').innerHTML =
-    '<div class="p-art">' + laptopArt(p) +
-      '<span class="badge b-second"><i data-lucide="recycle"></i>Second</span>' +
-      '<span class="badge b-status st-ready">Ready</span>' +
-    '</div>' +
-    '<div class="feat-body">' +
-      '<div class="feat-top"><span class="p-tag">Unit Unggulan Minggu Ini</span></div>' +
-      '<h3 style="font-size:19px;margin-bottom:4px">' + p.name + '</h3>' +
-      '<p class="p-cpu">' + p.cpu + ' · ' + p.ram + ' · ' + p.storage + '</p>' +
-      '<div class="cond" style="margin-top:14px"><div class="cond-top"><span>Kondisi hasil cek</span><b>' + p.cond + '% · ' + p.condLabel + '</b></div><div class="cond-bar"><i style="width:' + p.cond + '%"></i></div></div>' +
-      '<div style="display:flex;align-items:center;justify-content:space-between;margin-top:18px">' +
-        '<span class="p-price" style="font-size:21px">' + fmtRp(p.price) + '</span>' +
-        '<span class="btn btn-primary btn-sm">Lihat Detail</span>' +
-      '</div>' +
-      '<div class="feat-note"><i data-lucide="shield-check"></i>Garansi tukar 3 hari · bebas tes &amp; cek di toko sebelum beli</div>' +
-    '</div>';
-})();
-
+/* ================= INIT ================= */
 renderGrid();
-renderReviews();
-updateTray();
+renderChecks();
+renderFeat();
+renderT();
 icons();
 </script>
 </body>
